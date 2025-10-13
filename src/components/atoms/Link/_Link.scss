@@ -1,0 +1,32 @@
+.rt-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 14px;
+  color: $gray900;
+  line-height: 20px;
+  border-radius: 8px;
+  padding: 8px 0px;
+  flex-grow: 1;
+
+  &.rt-link-500 {
+    font-weight: 500;
+  }
+
+  &.rt-link-bold {
+    font-weight: bold;
+  }
+
+  &.rt-link-outlined {
+    border-width: 1px;
+    border-style: solid;
+    border-color: $gray100;
+  }
+
+  &.rt-link-color-primary {
+    background-color: $gray50;
+  }
+}

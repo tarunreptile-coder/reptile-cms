@@ -1,0 +1,66 @@
+.rt-insertable-image-container {
+    position: relative;
+
+    &.active {
+        width: 100%;
+    }
+
+    .rt-insertable-image {
+        object-fit: cover;
+        border-radius: 8px;
+        box-shadow: $boxShadowXS;
+
+        &.size-xs {
+            width: 60px;
+            height: 60px;
+        }
+
+        &.size-sm {
+            width: 80px;
+            height: 80px;
+        }
+
+        &.size-md {
+            width: 120px;
+            height: 120px;
+        }
+
+        &.size-lg {
+            width: 180px;
+            height: 180px;
+        }
+
+        &.size-xl {
+            width: 240px;
+            height: 240px;
+        }
+
+        &.active {
+            width: 100%;
+            height: unset;
+            aspect-ratio: 1;
+        }
+
+        &:hover {
+            box-shadow: $boxShadowXSFocusedPrimary;
+            cursor: pointer;
+        }
+    }
+
+    .rt-insertable-image-options {
+        height: auto;
+
+        .option-text {
+            margin-top: 8px;
+        }
+
+        .option-buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            gap: 4px;
+            margin: 8px 0px;
+        }
+    }
+
+}

@@ -1,0 +1,132 @@
+{
+  "General": [
+    {
+      "type": "ColorProperty",
+      "data": "widget.globalWidgetStyles.general.stylesBackgroundColor"
+    }
+  ],
+  "Title": [
+    {
+      "type": "ColorProperty",
+      "data": "widget.globalWidgetStyles.title.stylesColor"
+    },
+    {
+      "type": "SizeProperty",
+      "data": "widget.globalWidgetStyles.title.stylesFontSize"
+    },
+    {
+      "type": "FontStyleProperty",
+      "data": "widget.globalWidgetStyles.title.stylesFontStyle"
+    },
+    {
+      "type": "FontFamilyProperty",
+      "data": "widget.globalWidgetStyles.title.stylesFontFamily"
+    }
+  ],
+  "Text": [
+    {
+      "type": "ColorProperty",
+      "data": "widget.globalWidgetStyles.text.stylesColor"
+    },
+    {
+      "type": "SizeProperty",
+      "data": "widget.globalWidgetStyles.text.stylesFontSize"
+    },
+    {
+      "type": "FontStyleProperty",
+      "data": "widget.globalWidgetStyles.text.stylesFontStyle"
+    },
+    {
+      "type": "FontFamilyProperty",
+      "data": "widget.globalWidgetStyles.text.stylesFontFamily"
+    }
+  ],
+  "Button": [
+    {
+      "type": "ColorProperty",
+      "data": "widget.globalWidgetStyles.button.stylesColor"
+    },
+    {
+      "type": "SizeProperty",
+      "data": "widget.globalWidgetStyles.button.stylesFontSize"
+    },
+    {
+      "type": "FontStyleProperty",
+      "data": "widget.globalWidgetStyles.button.stylesFontStyle"
+    },
+    {
+      "type": "FontFamilyProperty",
+      "data": "widget.globalWidgetStyles.button.stylesFontFamily"
+    },
+    {
+      "type": "AlignmentProperty",
+      "data": "widget.globalWidgetStyles.button.stylesTextAlign"
+    },
+    {
+      "type": "ColorProperty",
+      "data": "widget.globalWidgetStyles.button.stylesBackgroundColor"
+    },
+    {
+      "type": "SizeProperty",
+      "data": "widget.globalWidgetStyles.button.stylesWidth"
+    },
+    {
+      "type": "SizeProperty",
+      "data": "widget.globalWidgetStyles.button.stylesHeight"
+    },
+    {
+      "type": "SpacingProperty",
+      "data": "widget.globalWidgetStyles.button.stylesMargin"
+    },
+    {
+      "type": "SpacingProperty",
+      "data": "widget.globalWidgetStyles.button.stylesPadding"
+    },
+    {
+      "type": "SliderProperty",
+      "data": "widget.globalWidgetStyles.button.stylesBorderRadius"
+    },
+    {
+      "type": "SliderProperty",
+      "data": "widget.globalWidgetStyles.button.stylesBorderWidth"
+    },
+    {
+      "type": "ColorProperty",
+      "data": "widget.globalWidgetStyles.button.stylesBorderColor"
+    },
+    {
+      "type": "SliderProperty",
+      "data": "widget.globalWidgetStyles.button.stylesBoxShadowHorizontal"
+    },
+    {
+      "type": "SliderProperty",
+      "data": "widget.globalWidgetStyles.button.stylesBoxShadowVertical"
+    },
+    {
+      "type": "SliderProperty",
+      "data": "widget.globalWidgetStyles.button.stylesBoxShadowBlur"
+    },
+    {
+      "type": "SliderProperty",
+      "data": "widget.globalWidgetStyles.button.stylesBoxShadowSpread"
+    },
+    {
+      "type": "ColorProperty",
+      "data": "widget.globalWidgetStyles.button.stylesBoxShadowColor"
+    }
+  ],
+  "Image": [
+    {
+      "type": "ColorProperty",
+      "data": "widget.globalWidgetStyles.image.stylesBackgroundColor"
+    },
+    {
+      "type": "SizeProperty",
+      "data": "widget.globalWidgetStyles.image.stylesWidth"
+    },
+    {
+      "type": "SizeProperty",
+      "data": "widget.globalWidgetStyles.image.stylesHeight"
+    }
+  ]
+}

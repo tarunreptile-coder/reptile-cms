@@ -1,0 +1,23 @@
+.rt-add-bolt-ons-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .title {
+        text-align: center;
+        padding: 0 0 20px 0;
+    }
+
+    .flex-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Terms {
+        padding-top: 20px;
+        font-size: 12px;
+        line-height: 18px;
+        width: 300px;
+        margin: auto;
+    }
+}

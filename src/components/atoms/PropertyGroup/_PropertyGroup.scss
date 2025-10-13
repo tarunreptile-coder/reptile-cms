@@ -1,0 +1,32 @@
+.rt-property-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &.close {
+        border-bottom-style: solid;
+        border-color: $gray200;
+    }
+
+    .rt-property-group-header {
+        gap: 4px;
+        margin-bottom: 4px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+
+        .property-group-arrow {
+            font-size: 20px;
+            color: $gray400;
+            transform: rotateZ(0deg);
+            transition: transform 400ms;
+            -webkit-transform: transform 400ms;
+
+            &.open {
+                transform: rotateZ(90deg);
+                transition: transform 400ms;
+                -webkit-transform: transform 400ms;
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.rt-three-dot-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .rt-btn {
+        margin-left: -12px;
+    }
+
+    .rt-icon {
+        color: $black;
+        font-weight: bold;
+    }
+
+    .three-dot-menu-title {
+        margin-left: -6px;
+    }
+}

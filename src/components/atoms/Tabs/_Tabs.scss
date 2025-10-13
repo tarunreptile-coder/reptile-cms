@@ -1,0 +1,19 @@
+.rt-tabs {
+    display: flex;
+    border-radius: 8px;
+
+    &.default {
+        flex-direction: row;
+        align-items: flex-start;
+        border-width: 1px;
+        border-color: $gray300;
+        border-style: solid;
+        overflow: hidden;
+    }
+
+    &.raised {
+        align-items: center;
+        background: $gray50;
+        border: 1px solid $gray100;
+    }
+}

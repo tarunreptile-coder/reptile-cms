@@ -1,0 +1,225 @@
+.rt-tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 6px;
+    border-width: 5px;
+
+    &.rt-tag-light-circle {
+        border-radius: 100px;
+
+        &.rt-tag-primary {
+            background-color: $primary100;
+            border-color: $primary100;
+            border-style: solid;
+            color: $primary600;
+        }
+
+        &.rt-tag-gray {
+            background-color: $gray100;
+            border-color: $gray100;
+            border-style: solid;
+            color: $gray600;
+        }
+
+        &.rt-tag-error {
+            background-color: $error100;
+            border-color: $error100;
+            border-style: solid;
+            color: $error600;
+        }
+
+        &.rt-tag-warning {
+            background-color: $warning100;
+            border-color: $warning100;
+            border-style: solid;
+            color: $warning600;
+        }
+
+        &.rt-tag-success {
+            background-color: $success100;
+            border-color: $success100;
+            border-style: solid;
+            color: $success600;
+        }
+    }
+
+    &.rt-tag-light-circle-outline {
+        border-radius: 100px;
+
+        &.rt-tag-primary {
+            background-color: $primary100;
+            border-color: $primary50;
+            border-style: solid;
+            color: $primary600;
+        }
+
+        &.rt-tag-gray {
+            background-color: $gray100;
+            border-color: $gray50;
+            border-style: solid;
+            color: $gray600;
+        }
+
+        &.rt-tag-error {
+            background-color: $error100;
+            border-color: $error50;
+            border-style: solid;
+            color: $error600;
+        }
+
+        &.rt-tag-warning {
+            background-color: $warning100;
+            border-color: $warning50;
+            border-style: solid;
+            color: $warning600;
+        }
+
+        &.rt-tag-success {
+            background-color: $success100;
+            border-color: $success50;
+            border-style: solid;
+            color: $success600;
+        }
+    }
+
+    &.rt-tag-dark-circle {
+        border-radius: 100px;
+        color: $white;
+
+        &.rt-tag-primary {
+            background-color: $primary600;
+            border-color: $primary700;
+            border-style: solid;
+        }
+
+        &.rt-tag-gray {
+            background-color: $gray600;
+            border-color: $gray700;
+            border-style: solid;
+        }
+
+        &.rt-tag-error {
+            background-color: $error500;
+            border-color: $error600;
+            border-style: solid;
+        }
+
+        &.rt-tag-warning {
+            background-color: $warning500;
+            border-color: $warning600;
+            border-style: solid;
+        }
+
+        &.rt-tag-success {
+            background-color: $success500;
+            border-color: $success600;
+            border-style: solid;
+        }
+    }
+
+    &.rt-tag-light-square {
+        &.rt-tag-primary {
+            background-color: $primary50;
+            border-color: $primary50;
+            border-style: solid;
+            color: $primary600;
+        }
+
+        &.rt-tag-gray {
+            background-color: $gray50;
+            border-color: $gray50;
+            border-style: solid;
+            color: $gray600;
+        }
+
+        &.rt-tag-error {
+            background-color: $error50;
+            border-color: $error50;
+            border-style: solid;
+            color: $error600;
+        }
+
+        &.rt-tag-warning {
+            background-color: $warning50;
+            border-color: $warning50;
+            border-style: solid;
+            color: $warning600;
+        }
+
+        &.rt-tag-success {
+            background-color: $success50;
+            border-color: $success50;
+            border-style: solid;
+            color: $success600;
+        }
+    }
+
+    &.rt-tag-mid-square {
+        color: $white;
+
+        &.rt-tag-primary {
+            background-color: $primary500;
+            border-color: $primary500;
+            border-style: solid;
+        }
+
+        &.rt-tag-gray {
+            background-color: $gray500;
+            border-color: $gray500;
+            border-style: solid;
+        }
+
+        &.rt-tag-error {
+            background-color: $error500;
+            border-color: $error500;
+            border-style: solid;
+        }
+
+        &.rt-tag-warning {
+            background-color: $warning500;
+            border-color: $warning500;
+            border-style: solid;
+        }
+
+        &.rt-tag-success {
+            background-color: $success500;
+            border-color: $success500;
+            border-style: solid;
+        }
+    }
+
+    &.rt-tag-dark-square {
+        color: $white;
+
+        &.rt-tag-primary {
+            background-color: $primary800;
+            border-color: $primary800;
+            border-style: solid;
+        }
+
+        &.rt-tag-gray {
+            background-color: $gray800;
+            border-color: $gray800;
+            border-style: solid;
+        }
+
+        &.rt-tag-error {
+            background-color: $error700;
+            border-color: $error700;
+            border-style: solid;
+        }
+
+        &.rt-tag-warning {
+            background-color: $warning700;
+            border-color: $warning700;
+            border-style: solid;
+        }
+
+        &.rt-tag-success {
+            background-color: $success700;
+            border-color: $success700;
+            border-style: solid;
+        }
+    }
+}

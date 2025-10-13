@@ -1,0 +1,134 @@
+@import "variables";
+@import "mixins";
+
+body {
+    background-color: white;
+}
+
+button:focus {
+    outline: none;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.rt-button-blue {
+    width: 200px;
+    height: 55px;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: #0057ff;
+
+    &:hover {
+        color: #fff;
+        background-color: #0057ff;
+    }
+
+    svg {
+        font-size: 16px;
+    }
+}
+
+
+.rt-primary-button {
+    color: #fff;
+    background-color: $primary-color;
+
+    &:hover {
+        color: #fff;
+        background-color: $primary-color-hover;
+    }
+}
+
+.rt-margin-10-top-bottom {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rt-margin-10-left-right {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.rt-align-self-end {
+    align-self: flex-end;
+}
+
+.rt-drop-shadows {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
+}
+
+.rt-text-align-right {
+    text-align: right;
+}
+
+.rt-space-between {
+    justify-content: space-between;
+}
+
+.rt-100-width {
+    width: 100%;
+}
+
+.rt-link {
+    cursor: pointer;
+    color: $blue-link-color;
+    text-decoration: underline;
+}
+
+.rt-thin-font {
+    font-weight: 100;
+}
+
+.rt-extra-light-font {
+    font-weight: 200;
+}
+
+.rt-light-font {
+    font-weight: 300;
+}
+
+.rt-regular-font {
+    font-weight: 400;
+}
+
+.rt-medium-font {
+    font-weight: 500;
+}
+
+.rt-semi-bold-font {
+    font-weight: 600;
+}
+
+.rt-bold-font {
+    font-weight: 700;
+}
+
+.rt-extra-bold-font {
+    font-weight: 800;
+}
+
+.rt-black-font {
+    font-weight: 900;
+}
+
+.rt-pointer {
+    cursor: pointer;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .rt-blurred-background {
+        background-color: rgba(52, 64, 84, 0.7);
+        -webkit-backdrop-filter: blur(16px);
+        backdrop-filter: blur(16px);
+    }
+}
+
+/* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .rt-blurred-background {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}

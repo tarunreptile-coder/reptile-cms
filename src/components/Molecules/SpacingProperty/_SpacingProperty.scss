@@ -1,0 +1,22 @@
+.rt-spacing-property {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .rt-spacing-property-header {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        margin-bottom: 4px;
+
+        .rt-options-text {
+            display: flex;
+            align-items: center;
+            font-style: italic;
+        }
+
+        .rt-options-toggle {
+            margin-left: auto;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "General": [
+        {
+            "type": "ColorProperty",
+            "data": "widget.stylesBackgroundColor"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.stylesMinHeight"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.stylesPadding"
+        }
+    ],
+    "Label": [
+        {
+            "type": "InputProperty",
+            "data": "widget.contents[0].generalLabel"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[0].stylesColor"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[0].stylesBackgroundColor"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[0].stylesFontSize"
+        },
+        {
+            "type": "FontStyleProperty",
+            "data": "widget.contents[0].stylesFontStyle"
+        },
+        {
+            "type": "FontFamilyProperty",
+            "data": "widget.contents[0].stylesFontFamily"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[0].stylesMargin"
+        }
+    ]
+}

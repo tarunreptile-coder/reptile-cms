@@ -1,0 +1,54 @@
+.rt-accounts-container {
+  width: 100%;
+
+  .header {
+    display: flex;
+    padding: 1vw;
+    width: 100%;
+
+    @media (max-width: 1025px){
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 8px;
+    gap: 10px;
+    }
+  }
+
+  .title-container {
+    display: flex;
+
+    div {
+      margin: auto;
+    }
+
+    .title {
+      padding-right: 1vw;
+    }
+  }
+
+  .rt-input {
+    margin-left: auto;
+
+    @media (max-width: 1025px) {
+      margin-left: 0;
+      }
+  }
+
+  .add-accounts {
+    display: contents;
+  }
+
+  .mobile-scroll-text {
+    display: none;
+    margin-top: 10px;
+    color: red;
+
+    @media (max-width: 1025px) {
+      display: block;
+    }
+  }
+}
+
+.style-input {
+  margin-right: 10px;
+}

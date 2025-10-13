@@ -1,0 +1,11 @@
+.rt-project-name-editor {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}

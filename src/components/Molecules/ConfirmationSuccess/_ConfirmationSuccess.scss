@@ -1,0 +1,91 @@
+.rt-account-confirmation {
+  background: #ffffff;
+
+  .message-container {
+    height: 100vh;
+    display: flex;
+    margin: 0 auto;
+    max-width: 550px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    .circle-check {
+      font-size: 9em;
+      color: #45c979;
+    }
+
+    .thanks-message {
+      margin: 25px;
+      font-family: Cabin;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 49px;
+      line-height: 60px;
+      text-align: center;
+    }
+
+    .info-message {
+      margin: 25px;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+
+      a {
+        color: #000;
+        text-decoration: underline;
+
+        &:hover {
+          color: #000;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .login-button {
+      margin: 25px;
+      height: 50px;
+      width: 280px;
+      display: flex;
+      cursor: pointer;
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: 500;
+      line-height: 29px;
+      font-family: Cabin;
+      font-style: normal;
+      text-align: center;
+      align-items: center;
+      letter-spacing: 2px;
+      /*background: #1e63ff;*/
+      background-color: #7f56d9;
+      box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+      border-radius: 5px;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+
+    .book-a-meeting-button {
+      margin: 25px;
+      height: 50px;
+      width: 280px;
+      display: flex;
+      cursor: pointer;
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: 500;
+      line-height: 29px;
+      font-family: Cabin;
+      font-style: normal;
+      text-align: center;
+      align-items: center;
+      letter-spacing: 2px;
+      background: #1e63ff;
+      justify-content: center;
+      text-transform: uppercase;
+    }
+  }
+}

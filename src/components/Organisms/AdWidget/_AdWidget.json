@@ -1,0 +1,12 @@
+{
+    "General": [
+        {
+            "type": "InputProperty",
+            "data": "widget.generalClientId"
+        },
+        {
+            "type": "InputProperty",
+            "data": "widget.generalUnitId"
+        }
+    ]
+}

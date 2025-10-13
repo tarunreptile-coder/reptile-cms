@@ -1,0 +1,23 @@
+.rt-content-images {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    >* {
+        margin-top: 24px;
+    }
+
+    .rt-file-drop {
+        margin-top: 6px;
+    }
+
+    :first-child {
+        margin-top: 0px;
+    }
+
+    .rt-upload-image-hidden {
+        transition: margin-top 300ms;
+        margin-top: 0px;
+    }
+}

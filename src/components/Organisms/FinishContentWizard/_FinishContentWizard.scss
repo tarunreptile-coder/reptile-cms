@@ -1,0 +1,78 @@
+.rt-finish-content-wizard {
+  display: flex;
+  height: 100%;
+  gap: 24px;
+
+  &.wizard-flex-box .rt-tab-panels,
+  &:not(.wizard-flex-box) .tabs-container {
+    width: 50%;
+  }
+
+  .rt-tab-panels {
+    position: relative;
+    width: 50%;
+  }
+
+  .rt-tab-panel {
+    height: 100%;
+  }
+
+  .rt-card {
+    justify-content: unset;
+    height: 100%;
+  }
+
+  .rt-card:not(.tabs-container) {
+    height: calc(100vh - 72px);
+    overflow-y: auto;
+  }
+
+  .tabs-container {
+    width: 100%;
+    padding: 24px;
+
+    .tabs-list {
+      width: 100%;
+      display: flex;
+
+      .MuiTab-root {
+        flex: 1;
+        max-width: none !important;
+      }
+    }
+
+    .tabs-list,
+    .tabs_layout {
+      width: 100%;
+    }
+
+    .steps-tab {
+      width: 50%;
+      &.Mui-selected {
+        border-radius: 8px 0 0 8px;
+      }
+    }
+
+    .video-tab {
+      width: 50%;
+      &.Mui-selected {
+        border-radius: 0 8px 8px 0;
+      }
+    }
+
+    .panel-content {
+      height: 100%;
+    }
+
+    .progress-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 190px);
+    }
+
+    .iFrame {
+      height: calc(100vh - 190px);
+    }
+  }
+}

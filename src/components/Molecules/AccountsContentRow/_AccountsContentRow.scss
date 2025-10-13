@@ -1,0 +1,127 @@
+.rt-account-content {
+    width: 100%;
+    th {
+        & > div {
+            display: flex;
+            svg {
+                margin-left: 2px;
+            }
+        }
+    }
+    td {
+        border: 0;
+    }
+
+    tr {
+        border-bottom: 1px solid $gray200;
+        border-top: 1px solid $gray200;
+        border-collapse: collapse;
+    }
+
+    .user-container {
+        display: flex;
+        .users {
+            margin-block: auto;
+            margin-left: 1vw;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 7vw;
+        }
+    }
+
+    .company-tags {
+        display: flex;
+    }
+
+    .edit-delete {
+        // display: flex;
+        // width: 100%;
+        justify-content: center !important;
+
+        svg {
+            margin-top: 0.3vh;
+            height: 1.2em;
+            width: 1.2em;
+            color: $gray400;
+            cursor: pointer;
+        }
+        .edit-btn {
+            button {
+                border: 1px solid transparent;
+                border-radius: 10px;
+            }
+        }
+        .delete-btn {
+            button {
+                border: 1px solid transparent;
+                border-radius: 10px;
+            }
+        }
+        .reset-btn {
+            button {
+                border: 1px solid transparent;
+                border-radius: 10px;
+            }
+        }
+        .subscription-btn {
+            button {
+                border: 1px solid transparent;
+                border-radius: 10px;
+                svg {
+                    height: 20px;
+                    width: 20px;
+                }
+            }
+        }
+        &.checked-edit {
+            .edit-btn {
+                button {
+                    background-color: #f4ebff;
+                    border: 1px solid #7f56d9;
+                    border-style: solid;
+                    color: #7f56d9;
+                }
+            }
+            .delete-btn {
+                margin-right: 5px;
+                button {
+                    background-color: #fac6c2;
+                    border: 1px solid #f00;
+                    border-style: solid;
+                }
+            }
+            .reset-btn,
+            .subscription-btn {
+                margin-left: 5px;
+                button {
+                    background-color: #eaecf0;
+                    border: 1px solid gray;
+                    border-style: solid;
+                }
+            }
+        }
+    }
+    .custom_modal {
+        width: 500px;
+    }
+}
+
+.custom_modal {
+    width: 500px;
+}
+
+.user-footer {
+    display: flex;
+    justify-content: end;
+    margin: 10px 0 0;
+    button {
+        & + button {
+            margin-left: 10px;
+        }
+    }
+}
+
+.pagination-container.custm_pagination_content {
+    margin: 0px;
+}

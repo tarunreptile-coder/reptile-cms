@@ -1,0 +1,11 @@
+.rt-status-light {
+    border-radius: 50%;
+
+    &.green {
+        background-color: $success500;
+    }
+
+    &.red {
+        background-color: $error500;
+    }
+}

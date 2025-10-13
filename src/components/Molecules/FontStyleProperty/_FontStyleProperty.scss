@@ -1,0 +1,10 @@
+.rt-font-style-property {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .rt-font-styles {
+        display: flex;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "General": [
+        {
+            "type": "SizeProperty",
+            "data": "widget.stylesMinHeight"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.stylesPadding"
+        },
+        {
+            "type": "ResetProperty",
+            "data": "widget.contentReset"
+        }
+    ]
+}

@@ -1,0 +1,93 @@
+.rt-project-create-progress {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .close-btn {
+        position: absolute;
+        top: -8px;
+        right: -8px;
+    }
+
+    .title {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .progress-container {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .indicator-container {
+        position: relative;
+
+        .success-icon {
+            position: absolute;
+            top: calc(50% - 40px);
+            left: calc(50% - 40px);
+            font-size: 80px;
+            color: $primary600;
+            stroke-dasharray: 24;
+
+            @keyframes check-fill-animation {
+                from {
+                    stroke-dashoffset: -24;
+                }
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+
+            @keyframes check-pop-animation {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.5);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            animation: check-fill-animation 400ms ease-in-out, check-pop-animation 400ms ease-in-out 400ms;
+        }
+
+        .error-icon {
+            position: relative;
+            top: calc(50% - 40px);
+            left: calc(50% - 40px);
+            font-size: 80px;
+            color: red;
+            stroke-dasharray: 24;
+
+            @keyframes check-fill-animation {
+                from {
+                    stroke-dashoffset: -24;
+                }
+                to {
+                    stroke-dashoffset: 0;
+                }
+            }
+
+            @keyframes check-pop-animation {
+                0% {
+                    transform: scale(1);
+                }
+                50% {
+                    transform: scale(1.5);
+                }
+                100% {
+                    transform: scale(1);
+                }
+            }
+
+            animation: check-fill-animation 400ms ease-in-out, check-pop-animation 400ms ease-in-out 400ms;
+        }
+    }
+}

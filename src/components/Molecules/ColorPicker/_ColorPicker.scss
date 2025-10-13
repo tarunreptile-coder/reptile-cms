@@ -1,0 +1,16 @@
+.rt-color-picker {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+
+    .saturation-picker {
+        width: 100%;
+        aspect-ratio: 1.095;
+        margin-bottom: 32px;
+    }
+
+    .hue-picker {
+        margin-bottom: 32px;
+    }
+}

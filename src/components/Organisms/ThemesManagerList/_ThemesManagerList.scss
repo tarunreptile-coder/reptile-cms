@@ -1,0 +1,46 @@
+.rt-themes-manager-list {
+    height: 100%;
+    
+    .confirmation-loading {
+        position: absolute;
+        top: 50%;
+        left: 60%;
+        transform: translate(-50%, -50%);
+    }
+
+    .rt-themes-list {
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+        justify-content: center;
+
+        .theme-list-item {
+            margin: 10px;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 5px;
+            padding: 1vw;
+
+            &.active-item {
+                position: relative;
+                padding-right: 28px;
+            }
+
+            .active-icon {
+                position: absolute;
+                top: 6px;
+                right: 6px;
+                height: 12px;
+                width: 12px;
+            }
+
+            @media (max-width: 300px) {
+                width: 70%; 
+                margin: 5px; 
+                padding: 0.5vw; 
+                font-size: 12px;
+                justify-content: flex-start;
+            }
+        }
+    }
+}

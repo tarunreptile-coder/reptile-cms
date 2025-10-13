@@ -1,0 +1,10 @@
+.rt-widget-menu-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    justify-content: unset;
+    gap: 2px;
+  }
+}

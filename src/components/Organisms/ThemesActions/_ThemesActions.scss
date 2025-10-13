@@ -1,0 +1,11 @@
+.rt-themes-actions{
+    display: flex;
+    width: 36vw;
+    justify-content: space-evenly;
+
+    @media (max-width: 460px) {
+            width: fit-content;
+            flex-direction: column;
+            gap: 8px;
+        }
+}

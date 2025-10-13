@@ -1,0 +1,14 @@
+.rt-tree-node-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .rt-tree-node-list {
+        padding-left: 12px;
+
+        .rt-tree-node-list {
+            padding-left: 24px;
+        }
+    }
+}

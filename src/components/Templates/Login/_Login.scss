@@ -1,0 +1,41 @@
+.rt-login-template {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+  .page-art-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  
+    > img {
+      width: 60%;
+    }
+  }
+
+ @media (max-width: 1024px) {
+    .rt-login-template {
+        flex-direction: column; /* Stack containers vertically */
+    }
+
+    .page-art-container {
+        width: 50%; /* Full width for art container */
+        margin-bottom: 20px; /* Add spacing between containers */
+    }
+
+    .rt-login-form-container {
+      width: 100%;
+    }
+  }
+
+    @media (max-width: 768px) {
+    .rt-login-form-container {
+      width: 100%;
+    }
+
+  }

@@ -1,0 +1,70 @@
+{
+    "General": [
+        {
+            "type": "FileDropProperty",
+            "data": "widget.contents[0].generalSrc"
+        }
+    ],
+    "Text": [
+        {
+            "type": "InputProperty",
+            "data": "widget.contents[0].generalText"
+        },
+        {
+            "type": "AlignmentProperty",
+            "data": "widget.stylesTextAlign"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[0].stylesColor"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[0].stylesFontSize"
+        },
+        {
+            "type": "FontStyleProperty",
+            "data": "widget.contents[0].stylesFontStyle"
+        },
+        {
+            "type": "FontFamilyProperty",
+            "data": "widget.contents[0].stylesFontFamily"
+        }
+    ],
+    "Background": [
+        {
+            "type": "ColorProperty",
+            "data": "widget.stylesBackgroundColor"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.stylesWidth"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.stylesMinHeight"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.stylesPadding"
+        }
+    ],
+    "Image": [
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[0].stylesWidth"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[0].stylesHeight"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[0].stylesPadding"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[0].stylesMargin"
+        }
+    ]
+}

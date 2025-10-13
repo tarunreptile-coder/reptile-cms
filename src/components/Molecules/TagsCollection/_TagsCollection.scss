@@ -1,0 +1,33 @@
+.rt-tags-collection {
+    width: 100%;
+
+    .rt-btn {
+        padding: 0px;
+        margin-bottom: 24px;
+    }
+
+    .tags-container {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 15px;
+        overflow-x: auto;
+        scrollbar-width: thin;
+        scrollbar-color: $gray200 transparent;
+    }
+
+    .tags-container::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+    }
+
+    .tags-container::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .tags-container::-webkit-scrollbar-thumb {
+        background-color: $gray200;
+        border-radius: 8px;
+        border: 0px;
+    }
+}

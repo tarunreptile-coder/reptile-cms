@@ -1,0 +1,23 @@
+.rt-payment-plan-modal {
+    padding-bottom: 40px;
+
+    .title {
+        text-align: center;
+        padding-top: 30px;
+
+        @media (max-width: 460px) {
+            padding-bottom: 10px;
+        }
+    }
+
+    .rt-payment-cards {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 20px;
+
+        @media (max-width: 480px) {
+        flex-direction: column;
+        gap: 20px;
+        }
+    }
+}

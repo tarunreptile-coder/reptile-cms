@@ -1,0 +1,11 @@
+{
+    "local": {
+        "api_url": "/api"
+    },
+    "stg": {
+        "api_url": "https://devadmin.pagelizard.co.uk/api"
+    },
+    "prod": {
+        "api_url": "https://admin.onreptile.com/api"
+    }
+}

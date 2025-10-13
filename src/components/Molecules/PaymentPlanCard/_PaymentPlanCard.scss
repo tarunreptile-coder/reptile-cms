@@ -1,0 +1,91 @@
+.rt-payment-plan {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  padding: 30px;
+  margin-left: 10px;
+  width: 400px;
+  background-color: #f7f7f7;
+
+  @media (max-width: 460px) {
+   width: 100%;
+   padding: 15px;
+}
+
+  .plan-tier {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .plan-price {
+    margin: 10px 0;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .plan-length {
+    padding-bottom: 30px;
+  }
+
+  .plan-info {
+    margin: 25px 0;
+    font-size: 22px;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+  }
+
+  .plan-column-list {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #333;
+  }
+
+  /*.plan-button {
+    padding: 10px 34px;
+    margin-right: 20px;
+    border-radius: 6px;
+    width: 100%;
+    color: #000;
+    border: 2px solid #000;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background-color: transparent;
+
+    &:hover {
+      background-color: $gray50;
+    }
+  }
+
+  .terms {
+    width: fit-content;
+    text-decoration: underline;
+  }*/
+
+  .plan-button {
+    padding: 10px 34px;
+    margin-right: 20px;
+    border-radius: 6px;
+    width: 100%;
+    color: $white;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background-color: $primary600;
+    border-color: $primary600;
+    box-shadow: $boxShadowXS;
+
+    &:hover {
+      background-color: $primary700;
+      border-color: $primary700;
+    }
+
+    &:focus {
+      box-shadow: $boxShadowXSFocusedPrimary;
+    }
+
+    &:disabled {
+      background-color: $primary200;
+      border-color: $primary200;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.rt-build-app-settings {
+    background-color: $primary25;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+
+    .build-header {
+        width: 100%;
+        padding: 15px 0 10px 0;
+        text-align: center;
+        background-color: $primary600;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    .build-download {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 25px;
+        align-items: center;
+        background-color: $primary600;
+        border-radius: 20px;
+
+        .rt-btn-contained {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .build-qrcode {
+            padding: 5px;
+            background-color: $primary25;
+        }
+    }
+
+    .build-os {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .os-text {
+            margin: auto;
+        }
+
+        .icon {
+            margin: auto;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

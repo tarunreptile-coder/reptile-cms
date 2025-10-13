@@ -1,0 +1,11 @@
+.rt-content-styles {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .header-item {
+        margin-left: -12px;
+        width: calc(100% + 12px);
+    }
+}

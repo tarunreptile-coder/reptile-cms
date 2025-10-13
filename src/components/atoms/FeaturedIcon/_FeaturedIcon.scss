@@ -1,0 +1,279 @@
+.rt-featured-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+
+    &.rt-featured-icon-xs {
+        width: 24px;
+        height: 24px;
+        border-width: 2px;
+        border-radius: 4px;
+
+        .rt-icon {
+            font-size: 12px;
+        }
+    }
+
+    &.rt-featured-icon-sm {
+        width: 32px;
+        height: 32px;
+        border-width: 4px;
+        border-radius: 6px;
+
+        .rt-icon {
+            font-size: 16px;
+        }
+    }
+
+    &.rt-featured-icon-md {
+        width: 40px;
+        height: 40px;
+        border-width: 6px;
+        border-radius: 8px;
+
+        .rt-icon {
+            font-size: 20px;
+        }
+    }
+
+    &.rt-featured-icon-lg {
+        width: 48px;
+        height: 48px;
+        border-width: 8px;
+        border-radius: 10px;
+
+        .rt-icon {
+            font-size: 24px;
+        }
+    }
+
+    &.rt-featured-icon-xl {
+        width: 56px;
+        height: 56px;
+        border-width: 10px;
+        border-radius: 12px;
+
+        .rt-icon {
+            font-size: 28px;
+        }
+    }
+
+    &.rt-featured-icon-light-circle {
+        border-radius: 50%;
+
+        &.rt-featured-icon-primary {
+            background-color: $primary100;
+            border-color: $primary100;
+            border-style: solid;
+            color: $primary600;
+        }
+
+        &.rt-featured-icon-gray {
+            background-color: $gray100;
+            border-color: $gray100;
+            border-style: solid;
+            color: $gray600;
+        }
+
+        &.rt-featured-icon-error {
+            background-color: $error100;
+            border-color: $error100;
+            border-style: solid;
+            color: $error600;
+        }
+
+        &.rt-featured-icon-warning {
+            background-color: $warning100;
+            border-color: $warning100;
+            border-style: solid;
+            color: $warning600;
+        }
+
+        &.rt-featured-icon-success {
+            background-color: $success100;
+            border-color: $success100;
+            border-style: solid;
+            color: $success600;
+        }
+    }
+
+    &.rt-featured-icon-light-circle-outline {
+        border-radius: 50%;
+
+        &.rt-featured-icon-primary {
+            background-color: $primary100;
+            border-color: $primary50;
+            border-style: solid;
+            color: $primary600;
+        }
+
+        &.rt-featured-icon-gray {
+            background-color: $gray100;
+            border-color: $gray50;
+            border-style: solid;
+            color: $gray600;
+        }
+
+        &.rt-featured-icon-error {
+            background-color: $error100;
+            border-color: $error50;
+            border-style: solid;
+            color: $error600;
+        }
+
+        &.rt-featured-icon-warning {
+            background-color: $warning100;
+            border-color: $warning50;
+            border-style: solid;
+            color: $warning600;
+        }
+
+        &.rt-featured-icon-success {
+            background-color: $success100;
+            border-color: $success50;
+            border-style: solid;
+            color: $success600;
+        }
+    }
+
+    &.rt-featured-icon-dark-circle {
+        border-radius: 50%;
+        color: $white;
+
+        &.rt-featured-icon-primary {
+            background-color: $primary600;
+            border-color: $primary700;
+            border-style: solid;
+        }
+
+        &.rt-featured-icon-gray {
+            background-color: $gray600;
+            border-color: $gray700;
+            border-style: solid;
+        }
+
+        &.rt-featured-icon-error {
+            background-color: $error500;
+            border-color: $error600;
+            border-style: solid;
+        }
+
+        &.rt-featured-icon-warning {
+            background-color: $warning500;
+            border-color: $warning600;
+            border-style: solid;
+        }
+
+        &.rt-featured-icon-success {
+            background-color: $success500;
+            border-color: $success600;
+            border-style: solid;
+        }
+    }
+
+    &.rt-featured-icon-light-square {
+        &.rt-featured-icon-primary {
+            background-color: $primary50;
+            border-color: $primary50;
+            border-style: solid;
+            color: $primary600;
+        }
+
+        &.rt-featured-icon-gray {
+            background-color: $gray50;
+            border-color: $gray50;
+            border-style: solid;
+            color: $gray600;
+        }
+
+        &.rt-featured-icon-error {
+            background-color: $error50;
+            border-color: $error50;
+            border-style: solid;
+            color: $error600;
+        }
+
+        &.rt-featured-icon-warning {
+            background-color: $warning50;
+            border-color: $warning50;
+            border-style: solid;
+            color: $warning600;
+        }
+
+        &.rt-featured-icon-success {
+            background-color: $success50;
+            border-color: $success50;
+            border-style: solid;
+            color: $success600;
+        }
+    }
+
+    &.rt-featured-icon-mid-square {
+        color: $white;
+
+        &.rt-featured-icon-primary {
+            background-color: $primary500;
+            border-color: $primary500;
+            border-style: solid;
+        }
+
+        &.rt-featured-icon-gray {
+            background-color: $gray500;
+            border-color: $gray500;
+            border-style: solid;
+        }
+
+        &.rt-featured-icon-error {
+            background-color: $error500;
+            border-color: $error500;
+            border-style: solid;
+        }
+
+        &.rt-featured-icon-warning {
+            background-color: $warning500;
+            border-color: $warning500;
+            border-style: solid;
+        }
+
+        &.rt-featured-icon-success {
+            background-color: $success500;
+            border-color: $success500;
+            border-style: solid;
+        }
+    }
+
+    &.rt-featured-icon-dark-square {
+        color: $white;
+
+        &.rt-featured-icon-primary {
+            background-color: $primary800;
+            border-color: $primary800;
+            border-style: solid;
+        }
+
+        &.rt-featured-icon-gray {
+            background-color: $gray800;
+            border-color: $gray800;
+            border-style: solid;
+        }
+
+        &.rt-featured-icon-error {
+            background-color: $error700;
+            border-color: $error700;
+            border-style: solid;
+        }
+
+        &.rt-featured-icon-warning {
+            background-color: $warning700;
+            border-color: $warning700;
+            border-style: solid;
+        }
+
+        &.rt-featured-icon-success {
+            background-color: $success700;
+            border-color: $success700;
+            border-style: solid;
+        }
+    }
+}

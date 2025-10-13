@@ -1,0 +1,43 @@
+.rt-app-template-header {
+    width: 100%;
+    display: flex;
+    padding: 2%;
+    height: 7%;
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .header-top {
+        display: flex;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        background-color: #ffffff;
+    }
+
+    .app-name {
+        margin: auto;
+        font-weight: bold;
+        color: #0077cc;
+        font-size: 24px;
+    }
+
+    .menu-toggle {
+        background-color: #888888;
+        border-radius: 4px;
+        outline: none;
+    }
+
+    .menu-icon {
+        width: 24px;
+        height: 24px;
+        fill: none;
+        stroke: currentColor;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 2;
+    }
+}

@@ -1,0 +1,9 @@
+.rt-footer-container {
+    margin-top: 40px;
+    width: 100%;
+
+    @media (max-width: 480px ) {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}

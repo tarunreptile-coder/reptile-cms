@@ -1,0 +1,40 @@
+.rt-billing-history-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    justify-content: center;
+
+    .billing-title {
+        text-align: center;
+    }
+
+    .billing-price {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: $gray200;
+        border-radius: 10px;
+    }
+
+    .billing-dates {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 10px;
+        padding: 10px;
+        background-color: $gray300;
+        border-radius: 10px;
+    }
+
+    .billing-details {
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        gap: 10px;
+        background-color: $gray200;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}

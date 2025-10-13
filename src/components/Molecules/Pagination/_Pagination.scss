@@ -1,0 +1,14 @@
+.rt-pagination {
+    display: flex;
+    justify-content: center;
+
+   @include tablet {
+    position: fixed;
+    justify-content: flex-start;
+    margin-left: 2px;
+   }
+
+   @media (max-width: 480px) {
+    gap: 10px;
+   }
+}

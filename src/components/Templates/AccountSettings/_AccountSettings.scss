@@ -1,0 +1,52 @@
+.rt-account-settings-template {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: min-content auto;
+    grid-template-rows: max-content auto;
+   
+    
+    .rt-header-container {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-width: 1px 0px 0px 0px;
+        border-color: $gray200;
+    }
+
+    .rt-side-menu-container {
+        height: 100%;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        border-style: solid;
+        border-width: 0px 1px 0px 0px;
+        border-color: $gray200;
+    }
+
+    .rt-accounts-container {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        
+        @include phone {
+            overflow: visible;
+        }
+        .rt-accounts-container::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .rt-accounts-container::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .rt-accounts-container::-webkit-scrollbar-thumb {
+            background-color: $gray200;
+            border-radius: 8px;
+            border: 0px;
+        }
+    }
+}

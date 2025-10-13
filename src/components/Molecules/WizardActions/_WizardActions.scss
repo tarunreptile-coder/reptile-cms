@@ -1,0 +1,9 @@
+.rt-wizard-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+
+    .rt-wizard-action {
+        flex: 1;
+    }
+}

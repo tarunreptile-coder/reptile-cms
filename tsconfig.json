@@ -1,0 +1,46 @@
+{
+    "compilerOptions": {
+        "target": "es2021",
+        "types": ["@dnd-kit/sortable", "@dnd-kit/core", "react", "react-dom"],
+        "module": "commonjs",
+        "lib": ["dom", "es2021"],
+        "declaration": true,
+        "declarationMap": true,
+        "jsx": "react-jsx",
+        "strict": true,
+        "pretty": true,
+        "sourceMap": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "resolveJsonModule": true,
+        "allowJs": true,
+        "baseUrl": ".",
+        "paths": {
+            "@Reptile/Assets": ["src/Assets"],
+            "@Reptile/Assets/*": ["src/Assets/*"],
+            "@Reptile/Components/*": ["src/Components/*"],
+            "@Reptile/Constants": ["src/Constants"],
+            "@Reptile/Constants/*": ["src/Constants/*"],
+            "@Reptile/Contexts": ["src/Contexts"],
+            "@Reptile/Framework": ["src/Framework"],
+            "@Reptile/Hooks": ["src/Hooks"],
+            "@Reptile/Services": ["src/Services"],
+            "@Reptile/Store": ["src/Store"],
+            "@Reptile/Store/*": ["src/Store/*"],
+            "~/*": ["src/*"]
+        },
+        "outDir": "build"
+    },
+    "exclude": [
+        "node_modules",
+        "build",
+        "webpack.config.js",
+        "src/Components/index.js",
+        "src/Build"
+    ]
+}

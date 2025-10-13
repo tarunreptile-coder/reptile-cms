@@ -1,0 +1,56 @@
+.rt-text-editor {
+  width: 100%;
+  height: 100%;
+
+  .progress-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 64px;
+  }
+  &.editor-class .tox-editor-header {
+    z-index: inherit;
+  }
+
+  &.full {
+    .tox {
+      .tox-edit-area__iframe {
+        max-width: 100%;
+        transition: max-width 0.5s ease-out;
+      }
+
+      .tox-statusbar {
+        width: 100%;
+        transition: width 0.5s ease-out;
+      }
+    }
+  }
+
+  &.tablet {
+    .tox {
+      .tox-edit-area__iframe {
+        max-width: 750px;
+        transition: max-width 0.5s ease-out;
+      }
+
+      .tox-statusbar {
+        width: 750px;
+        transition: width 0.5s ease-out;
+      }
+    }
+  }
+
+  &.mobile {
+    .tox {
+      .tox-edit-area__iframe {
+        max-width: 390px;
+        transition: max-width 0.5s ease-out;
+      }
+
+      .tox-statusbar {
+        width: 390px;
+        transition: width 0.5s ease-out;
+      }
+    }
+  }
+}

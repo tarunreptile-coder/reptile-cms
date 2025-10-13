@@ -1,0 +1,55 @@
+$small-phone-width: 480px;
+$phone-width: 640px;
+$tablet-width: 768px;
+$small-desktop-width: 1024px;
+$large-screens-width: 1200px;
+$extra-large-screens: 1400px;
+
+@mixin circle($size, $color) {
+    width: $size;
+    height: $size;
+    background: $color;
+    border-radius: 50%;
+}
+
+@mixin circleClass($tagName, $size, $color) {
+    #{$tagName} {
+        @include circle($size, $color);
+    }
+}
+
+@mixin small-phone {
+    @media ( max-width: #{$small-phone-width}) {
+   @content;     
+}  
+}
+
+@mixin phone {
+    @media (max-width: #{$phone-width}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: #{$tablet-width}) {
+        @content;
+    }
+}
+
+@mixin small-desktop {
+    @media (max-width: #{$small-desktop-width}) {
+        @content;
+    }
+}
+
+@mixin large-screens {
+    @media (max-width: #{$large-screens-width}) {
+        @content;
+    }
+}
+
+@mixin extra-large {
+    @media (max-width: #{$extra-large-screens}) {
+        @content;
+    }
+}

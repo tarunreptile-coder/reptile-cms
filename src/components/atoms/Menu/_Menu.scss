@@ -1,0 +1,68 @@
+.rt-menu-root {
+    pointer-events: none;
+
+    .rt-menu {
+        position: absolute;
+        background-color: $gray300;
+        pointer-events: none;
+        background: $white;
+        border: 1px solid $gray100;
+        box-shadow: $boxShadowL;
+        border-radius: 8px;
+        overflow: hidden;
+        transition: margin 300ms, opacity 300ms;
+        opacity: 0;
+        box-sizing: border-box;
+
+        &.left {
+            margin-left: 8px;
+        }
+
+        &.right {
+            margin-right: 8px;
+        }
+
+        &.top {
+            margin-bottom: -8px;
+        }
+
+        &.bottom {
+            margin-top: -8px;
+        }
+
+        &.open {
+            pointer-events: all;
+            opacity: 1;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        // Change scrollbar
+        .rt-menu-content {
+            scrollbar-width: thin;
+            scrollbar-color: $gray200 transparent;
+            overflow-y: auto;
+            height: 100%;
+            width: 100%;
+            margin-bottom: 0;
+            list-style: none;
+            padding: 0;
+        }
+
+        .rt-menu-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .rt-menu-content::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .rt-menu-content::-webkit-scrollbar-thumb {
+            background-color: $gray200;
+            border-radius: 8px;
+            border: 0px;
+        }
+    }
+}

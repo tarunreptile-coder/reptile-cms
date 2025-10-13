@@ -1,0 +1,30 @@
+.rt-organization-container {
+    width: 100%;
+
+    .header {
+        display: flex;
+        padding: 1vw;
+        width: 100%;
+    }
+
+    .title-container {
+        display: flex;
+        width: 100%;
+
+        button{
+            margin-left: auto;
+        }
+
+        div {
+            margin: unset;
+        }
+
+        .title {
+            padding-right: 1vw;
+        }
+    }
+
+    .rt-input {
+        margin-left: auto;
+    }
+}

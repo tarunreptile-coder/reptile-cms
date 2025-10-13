@@ -1,0 +1,64 @@
+.rt-tab {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    flex: 1;
+
+    &.default {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+
+        flex: none;
+        order: 0;
+        flex-grow: 1;
+        color: $gray700;
+
+        background-color: transparent;
+
+        border-width: 0px;
+        border-right-width: 1px;
+        border-color: $gray300;
+        border-style: solid;
+
+        padding: 9px 16px;
+        gap: 10px;
+
+        &:hover {
+            background-color: $gray25;
+        }
+
+        &:active {
+            background-color: $gray50;
+        }
+
+        &.selected {
+            background-color: $gray50;
+            color: $gray800;
+        }
+
+        &:last-child {
+            border-right-width: 0px;
+        }
+    }
+
+    &.raised {
+        background: $gray50;
+        color: $gray500;
+        border: 0;
+        width: 50%;
+        margin: 4px;
+        border-radius: 8px;
+        padding: 8px 12px 8px 12px;
+
+        &.selected {
+            background: $white;
+            box-shadow: $boxShadowM;
+            color: $gray700;
+        }
+    }
+}

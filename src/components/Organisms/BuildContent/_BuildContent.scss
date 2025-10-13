@@ -1,0 +1,20 @@
+.rt-build-content {
+    display: flex;
+    height: 100%;
+    gap: 10px;
+
+    .build-prototype {
+        flex: 0;
+    }
+
+    .build-progress {
+        flex: 1;
+        height: 100vh;
+        overflow-y: scroll;
+        padding-bottom: 77px;
+    }
+
+    .build-settings {
+        flex: 1;
+    }
+}

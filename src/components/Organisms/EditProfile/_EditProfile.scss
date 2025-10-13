@@ -1,0 +1,24 @@
+.rt-edit-profile {
+    display: flex;
+    width: 100%;
+
+    @include phone {
+       gap: 10px;
+       width: 50%;
+    }
+    .upload {
+        padding-left: 15px;
+        /*width: auto;*/
+
+        @include phone {
+            padding-left: 0;
+         }
+    }
+
+    .upgrade {
+        margin-left: auto;
+        flex-direction: column;
+        display: block;
+    }
+   
+}

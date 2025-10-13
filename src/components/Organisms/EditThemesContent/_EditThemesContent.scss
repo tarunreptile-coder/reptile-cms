@@ -1,0 +1,10 @@
+.rt-edit-themes {
+    display: flex;
+    height: 100%;
+
+    @media (max-width: 460px) {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+}

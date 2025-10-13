@@ -1,0 +1,142 @@
+.rt-text {
+    font-family: "Inter";
+
+    &.regular {
+        font-weight: 400;
+    }
+
+    &.medium {
+        font-weight: 500;
+    }
+
+    &.semibold {
+        font-weight: 600;
+    }
+
+    &.bold {
+        font-weight: 700;
+    }
+
+    &.inline {
+        display: inline;
+    }
+
+    &.black-color {
+        color: $black;
+    }
+
+    &.white-color {
+        color: $white;
+    }
+
+    &.light-gray-color {
+        color: $gray500;
+    }
+
+    &.gray-color {
+        color: $gray700;
+    }
+
+    &.dark-gray-color {
+        color: $gray900;
+    }
+
+    &.primary-color {
+        color: $primary700;
+    }
+
+    &.success-color {
+        color: $success700;
+    }
+
+    &.warning-color {
+        color: $warning700;
+    }
+
+    &.light-error-color {
+        color: $error500;
+    }
+
+    &.error-color {
+        color: $error700;
+    }
+
+    &.font-size-primary {
+        font-size: 14px;
+    }
+
+    &.font-size-h1 {
+        font-size: 30px;
+    }
+
+    &.font-size-h2 {
+        font-size: 23px;
+    }
+
+    &.font-size-h3 {
+        font-size: 18px;
+        line-height: 29px;
+    }
+
+    &.font-size-h4 {
+        font-size: 16px;
+    }
+
+    &.font-size-h5 {
+        font-size: 15px;
+    }
+
+    &.font-size-extra-small {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    &.font-size-small {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    &.font-size-medium {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &.font-size-large {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    &.font-size-extra-large {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &.font-size-extra-extra-large {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &.bold {
+        font-weight: bold;
+    }
+
+    @media (max-width: 821px) {
+        &.font-size-h1 {
+            font-size: 24px;
+        }
+
+        &.font-size-h2 {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        &.font-size-h1 {
+            font-size: 22px;
+        }
+
+        &.font-size-h2 {
+            font-size: 18px;
+        }
+    }
+}

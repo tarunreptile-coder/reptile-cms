@@ -1,0 +1,64 @@
+.stepperDiv {
+    z-index: 3;
+
+    .progressBarDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .progressBarContainer {
+        position: relative;
+        width: 100%;
+    }
+    .steps {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        z-index: 9;
+    }
+    .step {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background 1s;
+        text-align: center;
+    }
+
+    .completed {
+        background-color: #0f8c31;
+        border: 2px solid #3a4047;
+    }
+
+    .queued {
+        background-color: #fff;
+        border: 2px solid #3a4047;
+    }
+
+    .inprogress {
+        background-color: #0e94c4;
+        border: 2px solid #3a4047;
+    }
+
+    .failed {
+        background-color: #c40e14;
+        border: 2px solid #3a4047;
+    }
+
+    .percent {
+        position: absolute;
+        width: 0;
+        height: 100%;
+        z-index: -1;
+        transition: width 1s;
+        border-bottom: 2px solid #3a4047;
+    }
+
+    .stepper-progress {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        z-index: 3;
+        transition: background 1s;
+    }
+}

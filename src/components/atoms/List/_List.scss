@@ -1,0 +1,25 @@
+// Change scrollbar
+.rt-list {
+    scrollbar-width: thin;
+    scrollbar-color: $gray200 transparent;
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.rt-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.rt-list::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.rt-list::-webkit-scrollbar-thumb {
+    background-color: $gray200;
+    border-radius: 8px;
+    border: 0px;
+}

@@ -1,0 +1,23 @@
+.rt-clickable-icon {
+    border-radius: 8px;
+    padding: 8px;
+
+    &:hover {
+        cursor: pointer;
+        background-color: $gray50;
+    }
+
+    &:active {
+        cursor: pointer;
+        background-color: $gray100;
+    }
+
+    &.disabled {
+        cursor: progress;
+        background-color: transparent;
+    }
+
+    .rt-icon {
+        display: block;
+    }
+}

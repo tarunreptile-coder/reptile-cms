@@ -1,0 +1,36 @@
+.rt-build-table {
+    width: 100%;
+    background-color: $primary25;
+
+    .table-header {
+        text-align: center;
+    }
+
+    .table-row {
+        font-weight: bold;
+    }
+
+    .table-row-active {
+        background-color: $primary600;
+        color: $primary25;
+    }
+
+    .build-table-about {
+        width: 50%;
+        cursor: pointer;
+
+        .icon-and-version {
+            position: relative;
+
+            .icon {
+                position: absolute;
+                top: 50%;
+                margin-left: 5px;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    .build-table-progress {
+    }
+}

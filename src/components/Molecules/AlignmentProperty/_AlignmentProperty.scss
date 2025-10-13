@@ -1,0 +1,11 @@
+.rt-alignment-property {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    .rt-alignments-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}

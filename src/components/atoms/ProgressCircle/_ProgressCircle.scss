@@ -1,0 +1,122 @@
+.rt-progress-circle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.size-xxs {
+        width: 32px;
+        height: 32px;
+    }
+
+    &.size-xs {
+        width: 64px;
+        height: 64px;
+    }
+
+    &.size-sm {
+        width: 160px;
+        height: 160px;
+    }
+
+    &.size-md {
+        width: 180px;
+        height: 180px;
+    }
+
+    &.size-lg {
+        width: 240px;
+        height: 240px;
+    }
+
+    &.size-xl {
+        width: 280px;
+        height: 280px;
+    }
+
+    svg {
+        width: 100%;
+        height: 100%;
+        transform: rotate(-90deg);
+
+        &.indeterminate {
+            @keyframes indeterminate-rotation {
+                from {
+                    transform: rotate(-90deg);
+                }
+
+                to {
+                    transform: rotate(270deg);
+                }
+            }
+
+            animation: indeterminate-rotation 1s linear infinite;
+        }
+
+        >* {
+            fill: transparent;
+        }
+
+        circle.size-xxs {
+            stroke-width: 4px;
+
+            &.progress {
+                stroke-dasharray: calc(3.14159265358979 * 24);
+            }
+        }
+
+        circle.size-xs {
+            stroke-width: 6px;
+
+            &.progress {
+                stroke-dasharray: calc(3.14159265358979 * 52);
+            }
+        }
+
+        circle.size-sm {
+            stroke-width: 16px;
+
+            &.progress {
+                stroke-dasharray: calc(3.14159265358979 * 128);
+            }
+        }
+
+        circle.size-md {
+            stroke-width: 20px;
+
+            &.progress {
+                stroke-dasharray: calc(3.14159265358979 * 140);
+            }
+        }
+
+        circle.size-lg {
+            stroke-width: 24px;
+
+            &.progress {
+                stroke-dasharray: calc(3.14159265358979 * 192);
+            }
+        }
+
+        circle.size-xl {
+            stroke-width: 28px;
+
+            &.progress {
+                stroke-dasharray: calc(3.14159265358979 * 224);
+            }
+        }
+
+        .progress {
+            stroke: $primary600;
+            stroke-linecap: round;
+            stroke-miterlimit: 0;
+
+            &.determinate {
+                transition: stroke-dashoffset 200ms;
+            }
+        }
+
+        .track {
+            stroke: $primary50;
+        }
+    }
+}

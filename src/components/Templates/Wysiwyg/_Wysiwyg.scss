@@ -1,0 +1,104 @@
+.rt-wysiwyg-template {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: max-content auto max-content;
+    grid-template-rows: max-content auto;
+
+    .rt-header-container {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        border-width: 1px 0px 0px 0px;
+        border-color: $gray200;
+    }
+
+    .rt-treeview-container {
+        height: 91vh;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .rt-help-settings .help-menu-container.active {
+        width: 400px;
+    }
+
+    .rt-content-editor-container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        .rt-navbar-container {
+            width: 100%;
+        }
+
+        .rt-editor-container {
+            flex: 1;
+            width: 100%;
+        }
+    }
+
+    .rt-sidebar-container {
+        height: 100%;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        box-shadow: $boxShadowXL;
+        padding: 12px 24px 16px 24px;
+        width: 400px;
+        gap: 24px;
+
+        .rt-tab-panels {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+            overflow-y: hidden;
+            // Stretch view so the scrollbar is position to the end
+            // and scrolling is from top to bottom of the view
+            margin-top: -24px;
+            margin-left: -24px;
+            margin-right: -24px;
+            width: calc(100% + 48px);
+
+            .rt-tab-panel {
+                height: 100%;
+                padding-top: 24px;
+                padding-right: 24px;
+                padding-bottom: 24px;
+                padding-left: 24px;
+                overflow-y: overlay;
+
+                &::-webkit-scrollbar {
+                    width: 8px;
+                    height: 8px;
+                }
+
+                &::-webkit-scrollbar-track {
+                    background: transparent;
+                }
+
+                &::-webkit-scrollbar-thumb {
+                    background-color: $gray200;
+                    border-radius: 8px;
+                    border: 0px;
+                }
+            }
+        }
+
+        .settings-divider {
+            position: relative;
+            margin: -24px -24px 0px -24px;
+            border-top: 0px;
+            width: calc(100% + 48px);
+        }
+
+        .settings-actions {
+            background-color: $white;
+            position: relative;
+            margin-top: -8px;
+            width: 100%;
+        }
+    }
+}

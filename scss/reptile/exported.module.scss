@@ -1,0 +1,59 @@
+@import "variables";
+
+:export {
+    black: $black;
+    white: $white;
+
+    // Gray
+    gray25: $gray25;
+    gray50: $gray50;
+    gray100: $gray100;
+    gray200: $gray200;
+    gray300: $gray300;
+    gray400: $gray400;
+    gray500: $gray500;
+    gray600: $gray600;
+    gray700: $gray700;
+    gray800: $gray800;
+    gray900: $gray900;
+
+    // Primary
+    primary25: $primary25;
+    primary50: $primary50;
+    primary100: $primary100;
+    primary200: $primary200;
+    primary300: $primary300;
+    primary400: $primary400;
+    primary500: $primary500;
+    primary600: $primary600;
+    primary700: $primary700;
+    primary800: $primary800;
+    primary900: $primary900;
+
+    // Success
+    success50: $success50;
+    success100: $success100;
+    success500: $success500;
+    success600: $success600;
+    success700: $success700;
+
+    // Warning
+    warning50: $warning50;
+    warning100: $warning100;
+    warning400: $warning400;
+    warning500: $warning500;
+    warning600: $warning600;
+    warning700: $warning700;
+
+    // Error
+    error25: $error25;
+    error50: $error50;
+    error100: $error100;
+    error200: $error200;
+    error300: $error300;
+    error400: $error400;
+    error500: $error500;
+    error600: $error600;
+    error700: $error700;
+    error800: $error800;
+}

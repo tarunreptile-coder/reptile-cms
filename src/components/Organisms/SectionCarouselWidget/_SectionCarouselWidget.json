@@ -1,0 +1,146 @@
+{
+   
+   
+    "Container": [
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[1].stylesMinHeight"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[1].stylesBackgroundColor"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[1].stylesBorderRadius"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[1].stylesBoxShadowHorizontal"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[1].stylesBoxShadowVertical"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[1].stylesBoxShadowBlur"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[1].stylesBoxShadowSpread"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[1].stylesBoxShadowColor"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[1].stylesMargin"
+        }
+    ],
+    "Image": [
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[2].generalRadius"
+        }
+    ],
+    "Title": [
+        {
+            "type": "CheckboxProperty",
+            "data": "widget.contents[3].generalIsActive"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[3].stylesFontSize"
+        },
+        {
+            "type": "FontStyleProperty",
+            "data": "widget.contents[3].stylesFontStyle"
+        },
+        {
+            "type": "FontFamilyProperty",
+            "data": "widget.contents[3].stylesFontFamily"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[3].stylesColor"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[3].stylesBackgroundColor"
+        },
+        {
+            "type": "AlignmentProperty",
+            "data": "widget.contents[3].stylesTextAlign"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[3].stylesPadding"
+        }
+    ],
+    "Label": [
+        {
+            "type": "CheckboxProperty",
+            "data": "widget.contents[0].generalIsActive"
+        },
+        {
+            "type": "InputProperty",
+            "data": "widget.contents[0].generalLabel"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[0].stylesColor"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[0].stylesBackgroundColor"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[0].stylesFontSize"
+        },
+        {
+            "type": "FontStyleProperty",
+            "data": "widget.contents[0].stylesFontStyle"
+        },
+        {
+            "type": "FontFamilyProperty",
+            "data": "widget.contents[0].stylesFontFamily"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[0].stylesMargin"
+        }
+    ],
+    "Advanced": [
+        {
+            "type": "InputProperty",
+            "data": "widget.generalSkipIssues"
+        },
+        {
+            "type": "InputProperty",
+            "data": "widget.generalSkipSections"
+        },
+        {
+            "type": "InputProperty",
+            "data": "widget.generalVisibleItems"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.stylesBackgroundColor"
+        },
+        {
+            "type": "InputProperty",
+            "data": "widget.stylesBackgroundImage"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.stylesMinHeight"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.stylesPadding"
+        }
+    ]
+}

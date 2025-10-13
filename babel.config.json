@@ -1,0 +1,19 @@
+{
+  "presets": [
+    ["@babel/preset-env", { "targets": "defaults" }],
+    "@babel/preset-react",
+    ["@babel/preset-typescript", { "allowDeclareFields": true }]
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime",
+    "@babel/plugin-proposal-object-rest-spread",
+    "@babel/plugin-proposal-optional-chaining",
+    "@babel/plugin-transform-arrow-functions",
+    ["@babel/plugin-proposal-private-methods", { "loose": false }],
+    ["@babel/plugin-transform-classes", { "loose": false }],
+    [
+      "@babel/plugin-proposal-class-properties",
+      { "loose": false }
+    ]
+  ]
+}

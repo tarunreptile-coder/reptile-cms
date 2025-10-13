@@ -1,0 +1,50 @@
+.rt-tab-panels {
+    position: relative;
+    width: 100%;
+
+    .rt-tab-panel {
+        &.move-out {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    .slide-left-enter {
+        transform: translateX(-100%);
+    }
+
+    .slide-left-enter-active {
+        transform: translateX(0%);
+        transition: transform 200ms;
+    }
+
+    .slide-left-exit {
+        transform: translateX(0%);
+    }
+
+    .slide-left-exit-active {
+        transform: translateX(-100%);
+        transition: transform 200ms;
+    }
+
+    .slide-right-enter {
+        transform: translateX(100%);
+    }
+
+    .slide-right-enter-active {
+        transform: translateX(0%);
+        transition: transform 200ms;
+    }
+
+    .slide-right-exit {
+        transform: translateX(0%);
+    }
+
+    .slide-right-exit-active {
+        transform: translateX(100%);
+        transition: transform 200ms;
+    }
+}

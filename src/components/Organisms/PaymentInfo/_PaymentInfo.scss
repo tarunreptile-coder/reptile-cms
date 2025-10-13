@@ -1,0 +1,36 @@
+.rt-payment-info {
+    padding-right: 20px;
+    width: 340px;
+
+    @media (max-width: 460px) {
+        padding-right: 0;
+        margin: 5px;
+    }
+
+    .payment-info-container {
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+        height: 100%;
+
+        .payment-title {
+            padding-top: 20px;
+            margin-left: 40px;
+        }
+
+        .payment-features {
+            padding: 10px 40px 40px 40px;
+        }
+
+        .payment-billing {
+            display: flex;
+            justify-content: space-around;
+            background-color: $gray50;
+            padding: 20px 0 20px 0;
+
+            @media (max-width: 460px) {
+               margin-bottom: 10px;
+            }
+        }
+    }
+}

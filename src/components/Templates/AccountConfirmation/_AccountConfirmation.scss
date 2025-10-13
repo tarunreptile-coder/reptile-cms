@@ -1,0 +1,24 @@
+.rt-confirmation-page-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: max-content auto max-content;
+    grid-template-rows: max-content auto;
+
+    .rt-confirmation-content-container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 100vw;
+    }
+
+    .rt-main-container {
+        padding-top: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}

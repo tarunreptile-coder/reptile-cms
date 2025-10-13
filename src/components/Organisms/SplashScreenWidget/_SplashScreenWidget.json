@@ -1,0 +1,43 @@
+{
+    "General": [
+        {
+            "type": "FileDropProperty",
+            "data": "widget.contents[0].generalSrc"
+        }
+    ],    "Background": [
+        {
+            "type": "ColorProperty",
+            "data": "widget.stylesBackgroundColor"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.stylesWidth"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.stylesMinHeight"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.stylesPadding"
+        }
+    ],
+    "Image": [
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[0].stylesWidth"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[0].stylesHeight"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[0].stylesPadding"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[0].stylesMargin"
+        }
+    ]
+}

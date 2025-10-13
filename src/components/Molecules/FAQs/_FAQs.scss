@@ -1,0 +1,13 @@
+.rt-faqs {
+    .faq-container {
+        border: solid;
+        border-radius: 5px;
+        padding: 10px;
+        margin-top: 5px;
+        width: 800px;
+        .question {
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+}

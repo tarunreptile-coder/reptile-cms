@@ -1,0 +1,66 @@
+.rt-settings-font-size-widget {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+
+.font-bold {
+    font-weight: bold;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+}
+
+.flex-box-size {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+}
+
+.font-button-sm {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    border-width: 2px;
+    border-color: #d1d5db;
+    border-style: solid;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 700;
+}
+
+.font-button-md {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    border-width: 2px;
+    border-color: #d1d5db;
+    border-style: solid;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 700;
+}
+
+.font-button-lg {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    border-width: 2px;
+    border-color: #d1d5db;
+    border-style: solid;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+}
+
+.font-button-xl {
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
+    border-width: 2px;
+    border-color: #d1d5db;
+    border-style: solid;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+}
+}

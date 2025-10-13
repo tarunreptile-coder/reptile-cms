@@ -1,0 +1,34 @@
+.rt-ad-widget {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 120px;
+    position: relative;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+
+    .ad-image {
+        position: relative;
+        height: 100px;
+        width: 100px;
+
+        .wad-title {
+            position: absolute;
+            top: calc(50% - 16px);
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+
+    .ad-text-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+    }
+
+}

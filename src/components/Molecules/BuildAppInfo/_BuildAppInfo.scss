@@ -1,0 +1,28 @@
+.rt-build-app-info {
+    height: 100%;
+
+    .build-app-error {
+        height: 100%;
+        background-color: #fcfaff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 140px;
+
+        .error-icon {
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    .build-app-pending {
+        height: 100%;
+        background-color: #fcfaff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 140px;
+    }
+}

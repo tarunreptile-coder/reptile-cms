@@ -1,0 +1,203 @@
+{
+  
+    "Container": [
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[0].stylesMinHeight"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[0].stylesBackgroundColor"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBorderRadius"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBoxShadowHorizontal"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBoxShadowVertical"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBoxShadowBlur"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBoxShadowSpread"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[0].stylesBoxShadowColor"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[0].stylesMargin"
+        }
+    ],
+    "Image": [
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[1].stylesHeight"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[1].stylesWidth"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[1].stylesBorderRadius"
+        }
+    ],
+    "Title": [
+        {
+            "type": "CheckboxProperty",
+            "data": "widget.contents[2].generalIsActive"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[2].stylesFontSize"
+        },
+        {
+            "type": "FontStyleProperty",
+            "data": "widget.contents[2].stylesFontStyle"
+        },
+        {
+            "type": "FontFamilyProperty",
+            "data": "widget.contents[2].stylesFontFamily"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[2].stylesColor"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[2].stylesBackgroundColor"
+        },
+        {
+            "type": "AlignmentProperty",
+            "data": "widget.contents[2].stylesTextAlign"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[2].stylesPadding"
+        }
+    ],
+    "Subheading": [
+        {
+            "type": "CheckboxProperty",
+            "data": "widget.contents[3].generalIsActive"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[3].stylesFontSize"
+        },
+        {
+            "type": "FontStyleProperty",
+            "data": "widget.contents[3].stylesFontStyle"
+        },
+        {
+            "type": "FontFamilyProperty",
+            "data": "widget.contents[3].stylesFontFamily"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[3].stylesColor"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[3].stylesBackgroundColor"
+        },
+        {
+            "type": "AlignmentProperty",
+            "data": "widget.contents[3].stylesTextAlign"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[3].stylesPadding"
+        }
+    ],
+    "Publish date": [
+        {
+            "type": "CheckboxProperty",
+            "data": "widget.contents[4].generalIsActive"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[4].stylesFontSize"
+        },
+        {
+            "type": "FontStyleProperty",
+            "data": "widget.contents[4].stylesFontStyle"
+        },
+        {
+            "type": "FontFamilyProperty",
+            "data": "widget.contents[4].stylesFontFamily"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[4].stylesColor"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[4].stylesBackgroundColor"
+        },
+        {
+            "type": "AlignmentProperty",
+            "data": "widget.contents[4].stylesTextAlign"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[4].stylesPadding"
+        }
+    ],
+    "Advanced": [
+        {
+            "type": "InputProperty",
+            "data": "widget.generalSkipIssues"
+        },
+        {
+            "type": "InputProperty",
+            "data": "widget.generalSkipSections"
+        },
+        {
+            "type": "InputProperty",
+            "data": "widget.generalSkipArticles"
+        },
+        {
+            "type": "InputProperty",
+            "data": "widget.generalVisibleItems"
+        },
+        {
+            "type": "CheckboxProperty",
+            "data": "widget.generalIsVideo"
+        },
+        {
+            "type": "CheckboxProperty",
+            "data": "widget.generalIgnoreSections"
+        },
+        {
+            "type": "CheckboxProperty",
+            "data": "widget.generalShowCover"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.stylesBackgroundColor"
+        },
+        {
+            "type": "InputProperty",
+            "data": "widget.stylesBackgroundImage"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.stylesMinHeight"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.stylesPadding"
+        }
+    ]
+}

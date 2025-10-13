@@ -1,0 +1,56 @@
+{
+    "General": [
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[0].stylesBackgroundColor"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[0].stylesWidth"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[0].stylesHeight"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[0].stylesMargin"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[0].stylesPadding"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBorderRadius"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBorderWidth"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[0].stylesBorderColor"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBoxShadowHorizontal"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBoxShadowVertical"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBoxShadowBlur"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBoxShadowSpread"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[0].stylesBoxShadowColor"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+.rt-folder-card {
+    max-width: 220px;
+
+    .rt-image {
+        margin-bottom: 8px;
+    }
+
+    > .rt-card {
+        padding: 4.5px 12px 9.5px 12px;
+    }
+
+    .items-count {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.rt-folder-card-list-item {
+    width: 220px;
+}

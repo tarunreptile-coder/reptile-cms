@@ -1,0 +1,88 @@
+.rt-widget-overlay {
+    padding: 8px;
+    margin-top: -3px;
+
+    &.max-height {
+        height: 100%;
+    }
+
+    .rt-widget-overlay-content {
+        position: relative;
+
+        &.max-height {
+            height: 100%;
+        }
+
+        .settings-button {
+            position: absolute;
+            pointer-events: none;
+            opacity: 0;
+            right: 8px;
+            transition: opacity 300ms;
+
+            &.normal {
+                top: 8px;
+            }
+
+            &.compact {
+                top: 0px;
+            }
+
+            &.rt-btn {
+                box-shadow: $boxShadowM;
+            }
+
+            &.rt-btn:focus {
+                box-shadow: $boxShadowM;
+            }
+        }
+    }
+
+    &.active {
+        &:hover {
+            cursor: pointer;
+
+            .settings-button {
+                pointer-events: all;
+                opacity: 1;
+                transition: opacity 300ms;
+            }
+        }
+
+        &.show-setting {
+            .settings-button {
+                pointer-events: all;
+                opacity: 1;
+                transition: opacity 300ms;
+            }
+        }
+    }
+
+    &.grid-mode {
+        padding: 5px;
+        margin-top: -3px;
+        border: 3px dashed $gray300;
+        border-top: 3px solid transparent;
+        border-radius: 4px;
+
+        &.top-element {
+            border-top: 3px dashed $gray300;
+        }
+
+        &.selected {
+            position: relative;
+            border: 3px solid $primary500;
+        }
+    }
+}
+
+.max-height {
+    height: 100%;
+}
+
+.rt-dragging-item {
+    .rt-widget-overlay {
+        background-color: rgba($primary100, 0.5);
+        border-radius: 8px;
+    }
+}

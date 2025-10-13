@@ -1,0 +1,35 @@
+.rt-payment-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .title {
+        text-align: center;
+        padding: 0 0 50px 0;
+
+        @media (max-width: 460px) {
+            padding: 5px 0 20px 0;
+        }
+    }
+
+    .flex-box {
+        display: flex;
+        justify-content: center;
+
+        @media (max-width: 460px) {
+            flex-direction: column;
+        }
+    }
+
+    .Terms {
+        padding-top: 30px;
+        font-size: 12px;
+        line-height: 18px;
+        width: 300px;
+        margin: auto;
+
+        @media (max-width: 460px) {
+            padding-bottom: 20px;
+        }
+    }
+}

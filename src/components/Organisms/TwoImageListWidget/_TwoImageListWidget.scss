@@ -1,0 +1,45 @@
+.rt-two-image-list-widget {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .widget-row-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        .widget-item-container {
+            display: flex;
+            flex-direction: column;
+            flex: 0.5;
+
+            .widget-image {
+                overflow: hidden;
+                width: 100%;
+                line-height: 1;
+
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .widget-text-container {
+                display: flex;
+                flex-direction: column;
+
+                .widget-caption {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+            }
+        }
+    }
+}

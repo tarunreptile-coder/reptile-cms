@@ -1,0 +1,36 @@
+.rt-payment-options {
+  .toggle {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    padding-right: 80px;
+
+    @media (max-width: 480px) {
+      justify-content: center;
+      padding-right: 0;
+      margin-top: 20px;
+      margin-bottom: 15px;
+      }
+  }
+
+  .currency {
+    display: flex;
+    justify-content: end;
+    padding-right: 100px;
+    padding-top: 10px;
+    gap: 10px;
+
+    @media (max-width: 480px) {
+      justify-content: center;
+     padding-right: 0;
+      }
+  }
+
+  .plan-length {
+    padding: 0 5px 0 5px;
+  }
+
+  .rt-toggle {
+    background-color: $gray500;
+  }
+}

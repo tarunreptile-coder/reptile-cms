@@ -1,0 +1,84 @@
+.rt-tree-node {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-self: stretch;
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: background-color 300ms;
+    width: 20vw;
+    transition: width 0.3s ease-in-out;
+    justify-content: center;
+    align-items: flex-end;
+
+    &.active {
+        width: 50px;
+        justify-content: unset;
+        align-items: unset;
+    }
+
+&.fit{width: fit-content;}
+
+    &:hover {
+        background-color: $gray50;
+        cursor: pointer;
+    }
+
+    &.selected {
+        background-color: $gray100;
+    }
+
+    .rt-tree-node-content {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        gap: 12px;
+        flex: 1;
+        overflow: hidden;
+
+        .rt-node-text {
+            flex: 1;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        > .rt-icon {
+            margin: 4px 0px;
+            font-size: 24px;
+            color: $gray500;
+        }
+    }
+
+    .rt-caret-icon {
+        font-size: 20px;
+        color: $gray400;
+        transform: rotateZ(0deg);
+        transition: transform 400ms;
+        -webkit-transform: transform 400ms;
+
+        &.open {
+            transform: rotateZ(90deg);
+            transition: transform 400ms;
+            -webkit-transform: transform 400ms;
+        }
+    }
+
+    > .rt-tree-node-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 8px;
+
+        > .rt-clickable-icon {
+            padding: 0;
+        }
+    }
+}
+
+.tree-node-label {
+    background-color: $primary100;
+    border-radius: 10px;
+    padding: 5px;
+}

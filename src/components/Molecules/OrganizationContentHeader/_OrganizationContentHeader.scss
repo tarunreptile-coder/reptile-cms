@@ -1,0 +1,42 @@
+.rt-content-header {
+    width: 100%;
+    background-color: $gray100;
+
+    th {
+        border: 0;
+    }
+
+    tr {
+        border-bottom: 1px solid $gray200;
+        border-top: 1px solid $gray200;
+        border-collapse: collapse;
+    }
+
+    .email {
+        cursor: pointer;
+    }
+
+    .name {
+        cursor: pointer;
+        justify-content: center;
+    }
+
+    .role-header {
+        display: flex;
+        .role {
+            padding-right: 1vw;
+        }
+
+        .help {
+            svg {
+                margin-top: 0.3vh;
+                height: 1.2em;
+                width: 1.2em;
+                color: $gray400;
+            }
+        }
+    }
+    .flex_end{
+        justify-content: end;
+    }
+}

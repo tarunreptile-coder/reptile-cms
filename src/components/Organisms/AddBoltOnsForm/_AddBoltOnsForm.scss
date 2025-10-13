@@ -1,0 +1,67 @@
+.rt-add-bolt-ons-form {
+    padding-left: 20px;
+    width: 340px;
+
+    .payment-form-container {
+        padding: 40px;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+        height: 100%;
+    }
+
+    .number {
+        background-color: white;
+        padding: 10px;
+        border: solid;
+        border-color: $gray300;
+        border-radius: 5px;
+        width: 250px;
+    }
+
+    .expiration-cvc {
+        display: flex;
+        padding: 20px 0 20px 0;
+
+        .expiry-container {
+            padding-right: 5px;
+
+            .expiry {
+                background-color: white;
+                padding: 10px;
+                border: solid;
+                border-color: $gray300;
+                border-radius: 5px;
+                width: 120px;
+            }
+        }
+
+        .cvc-container {
+            padding-left: 5px;
+
+            .cvc {
+                background-color: white;
+                padding: 10px;
+                border: solid;
+                border-color: $gray300;
+                border-radius: 5px;
+                width: 120px;
+            }
+        }
+    }
+
+    .bolt-ons {
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        .add {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    .submit {
+        margin: auto;
+        width: 100%;
+    }
+}

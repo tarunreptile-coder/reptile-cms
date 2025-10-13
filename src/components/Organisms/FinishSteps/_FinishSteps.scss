@@ -1,0 +1,28 @@
+.rt-finish-steps-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .finish-steps-title {
+        text-align: center;
+        padding-top: 40px;
+    }
+
+    .finish-steps-inputs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        min-width: 350px;
+        margin: auto 40px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .finish-steps-help{
+        text-align: center;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

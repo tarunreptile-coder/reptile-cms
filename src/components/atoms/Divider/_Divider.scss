@@ -1,0 +1,13 @@
+.rt-divider {
+    background-color: $gray200;
+
+    &.vertical {
+        width: 1px;
+        height: 100%;
+    }
+
+    &.horizontal {
+        height: 1px;
+        width: 100%;
+    }
+}

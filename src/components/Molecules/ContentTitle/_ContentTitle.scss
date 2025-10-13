@@ -1,0 +1,9 @@
+.rt-content-title {
+    width: calc(100% - 130px);
+    padding: 10.5px 0px 16px 65px;
+
+    @media (max-width: 1025px) {
+        padding: 5px 0 5px 8px;
+    }
+   
+}

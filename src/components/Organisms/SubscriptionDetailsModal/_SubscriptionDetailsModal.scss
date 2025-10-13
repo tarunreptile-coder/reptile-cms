@@ -1,0 +1,62 @@
+.loading-text,
+.no-data-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1rem;
+  color: #666;
+}
+
+.MuiAccordion-root {
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.MuiAccordionSummary-root {
+  background-color: #f9f9f9;
+  font-weight: 500;
+}
+
+.MuiAccordionSummary-root:hover {
+  background-color: #f1f1f1;
+}
+
+.subscription-modal-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subscription-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  .detail-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .grace-period-label {
+    margin-left: auto;
+  }
+
+  .input-text-field {
+    max-width: 100px;
+  }
+
+  .action-button-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .accordion-action-btn {
+    max-width: 150px;
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,54 @@
+.rt-modal {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @keyframes modal-appear {
+        from {
+            transform: scale(0.5);
+        }
+
+        to {
+            transform: scale(1);
+        }
+    }
+
+    .modal-container {
+        background: $white;
+        height: auto;
+        animation: modal-appear 200ms ease-out;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: $boxShadowXL;
+
+        @media (max-width: 480px) {
+            width: 80%;
+            padding: 15px;   
+         }
+    }
+
+    .responsive-modal {
+        width: 540px;
+
+        @media (max-width: 430px) {
+            width: 300px !important;
+        }
+    }
+@media (max-width: 430px) {
+    .responsive-input {
+        width: 300px !important;
+    }
+}
+
+.responsive-content {
+    width: 540px;
+
+    @media (max-width: 430px) {
+        
+            width: 300px !important;
+        }
+}
+
+}

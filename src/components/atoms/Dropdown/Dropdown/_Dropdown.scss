@@ -1,0 +1,24 @@
+.rt-dropdown {
+    position: relative;
+
+    > .icon-and-text {
+        display: flex;
+        align-items: center;
+
+        .center-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                margin-right: 8px;
+            }
+        }
+    }
+
+    .options-menu {
+        z-index: 1;
+        position: absolute;
+        background-color: $white;
+    }
+}

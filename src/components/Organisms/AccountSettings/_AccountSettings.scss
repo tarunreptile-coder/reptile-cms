@@ -1,0 +1,14 @@
+.rt-account-settings {
+    background-color: white;
+    height: 100%;
+    padding: 28px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: $gray200 transparent;
+
+    @include phone {
+        padding: 10px;
+        overflow: auto;
+            height: 100vh; 
+    }
+}

@@ -1,0 +1,108 @@
+{
+    "General": [
+        {
+            "type": "ColorProperty",
+            "data": "widget.stylesBackgroundColor"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.stylesWidth"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.stylesMinHeight"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.stylesPadding"
+        }
+    ],
+    "Link1": [
+        {
+            "type": "FileDropProperty",
+            "data": "widget.contents[1].generalSrc"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[1].stylesWidth"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[1].stylesHeight"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[1].stylesPadding"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[1].stylesMargin"
+        }
+    ],
+    "Link2": [
+        {
+            "type": "FileDropProperty",
+            "data": "widget.contents[3].generalSrc"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[3].stylesWidth"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[3].stylesHeight"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[3].stylesPadding"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[3].stylesMargin"
+        }
+    ],
+    "Link3": [
+        {
+            "type": "FileDropProperty",
+            "data": "widget.contents[5].generalSrc"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[5].stylesWidth"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[5].stylesHeight"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[5].stylesPadding"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[5].stylesMargin"
+        }
+    ],
+    "Link4": [
+        {
+            "type": "FileDropProperty",
+            "data": "widget.contents[7].generalSrc"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[7].stylesWidth"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[7].stylesHeight"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[7].stylesPadding"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[7].stylesMargin"
+        }
+    ]
+}

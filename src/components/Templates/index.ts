@@ -1,0 +1,17 @@
+export { default as AccountsTemplate } from './Accounts/_Accounts';
+export { default as AccountSettingsTemplate } from './AccountSettings/_AccountSettings';
+export { default as AccountConfirmationTemplate } from './AccountConfirmation/_AccountConfirmation';
+export { default as AddBoltOnsTemplate } from './AddBoltOns/_AddBoltOns';
+export { default as BillingHistoryTemplate } from './BillingHistory/_BillingHistory';
+export { default as ContentTemplate } from './Content/_Content';
+export { default as FinishTemplate } from './Finish/_Finish';
+export { default as LoginTemplate } from './Login/_Login';
+export { default as RegisterTemplate } from './Register/_Register';
+export { default as ForgetPasswordTemplate } from './ForgetPassword/_ForgetPassword';
+export { default as PaymentTemplate } from './Payment/_Payment';
+export { default as PlanTemplate } from './Plan/_Plan';
+export { default as PrototypeTemplate } from './Prototype/_Prototype';
+export { default as ResetPasswordTemplate } from './ResetPassword/_ResetPassword';
+export { default as SideMenuLayout } from './SideMenuLayout/_SideMenuLayout';
+export { default as TemplateBuilderTemplate } from './TemplateBuilder/_TemplateBuilder';
+export { default as WysiwygTemplate } from './Wysiwyg/_Wysiwyg';

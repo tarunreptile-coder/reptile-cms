@@ -1,0 +1,166 @@
+.rt-build-setting {
+    padding: 0 34px 34px 0;
+    .file_upload_layout {
+        position: relative;
+        width: 180px;
+        margin: auto;
+
+        img {
+            width: 100%;
+        }
+
+        svg {
+            position: absolute;
+            top: 35%;
+            z-index: 9;
+            left: 50%;
+            transform: translate(-50%, -35%);
+        }
+
+        .filepond--drop-label {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            margin-top: 0;
+        }
+
+        .filepond--panel-root {
+            background: #fff;
+            border: 1px solid #eaecf0;
+            border-radius: 50px;
+            padding: 16px 14px;
+        }
+
+        .file-pond {
+            margin-top: 28px;
+            width: 100%;
+        }
+
+        .trash_icon {
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: rgba(14, 14, 14, 0.5);
+
+            .image-container {
+                width: 20%;
+                height: 20%;
+                position: relative;
+                opacity: 1;
+                margin-left: auto;
+                svg {
+                    position: relative;
+                    height: 100%;
+                    width: 100%;
+                    fill: #f86c6b;
+                }
+                :hover {
+                    position: relative;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .app_content {
+        margin-top: 25px;
+    }
+
+    .text_boxWith_Icon {
+        position: relative;
+        width: 100%;
+        padding-bottom: 20px;
+
+        svg {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            fill: #fda29b;
+            width: 15px;
+        }
+
+        .tab_text {
+            width: 100%;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 10px 30px 10px 14px;
+            height: 44px;
+            color: #667085;
+            font-weight: 400;
+            background: #fff;
+        }
+
+        .tab_text:focus {
+            outline: 0;
+        }
+    }
+
+    .text_box_content {
+        label {
+            font-size: 14px;
+            color: #344054;
+            font-weight: 500;
+            line-height: 20px;
+            margin-bottom: 6px;
+            width: 100%;
+        }
+    }
+
+    .share_box_title {
+        h1 {
+            line-height: 38px;
+            font-weight: 700;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 0px;
+            font-size: 14px;
+            color: #667085;
+            line-height: 20px;
+            font-weight: 400;
+        }
+    }
+
+    .main_btn {
+        display: flex;
+        align-items: center;
+        padding-top: 40px;
+
+        .defaultThemeBtn {
+            height: 60px;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 8px;
+            padding: 16px 28px;
+        }
+
+        .rt-btn {
+            margin-left: 12px;
+        }
+
+        .themeSecondaryBtn:hover {
+            border: 1px solid #d0d5dd;
+            min-width: 98px;
+            color: #344054;
+        }
+    }
+
+    .build-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .build-download {
+            width: 50%;
+            margin: auto;
+        }
+    }
+}
+
+.file_upload_layout:hover .trash_icon {
+    opacity: 1;
+}

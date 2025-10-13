@@ -1,0 +1,110 @@
+{
+    "Button 1": [
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[0].stylesBackgroundColor"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[0].stylesWidth"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[0].stylesHeight"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[0].stylesMargin"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[0].stylesPadding"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBorderRadius"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBorderWidth"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[0].stylesBorderColor"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBoxShadowHorizontal"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBoxShadowVertical"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBoxShadowBlur"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[0].stylesBoxShadowSpread"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[0].stylesBoxShadowColor"
+        }
+    ],
+    "Button 2": [
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[1].stylesBackgroundColor"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[1].stylesWidth"
+        },
+        {
+            "type": "SizeProperty",
+            "data": "widget.contents[1].stylesHeight"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[1].stylesMargin"
+        },
+        {
+            "type": "SpacingProperty",
+            "data": "widget.contents[1].stylesPadding"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[1].stylesBorderRadius"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[1].stylesBorderWidth"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[1].stylesBorderColor"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[1].stylesBoxShadowHorizontal"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[1].stylesBoxShadowVertical"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[1].stylesBoxShadowBlur"
+        },
+        {
+            "type": "SliderProperty",
+            "data": "widget.contents[1].stylesBoxShadowSpread"
+        },
+        {
+            "type": "ColorProperty",
+            "data": "widget.contents[1].stylesBoxShadowColor"
+        }
+    ]
+}

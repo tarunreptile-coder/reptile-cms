@@ -1,0 +1,55 @@
+.hexa_color_box .flex_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex_box h6 {
+    color: #101828;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.colors_code {background: #F2F4F7;border-radius: 4px;padding: 7px;display: flex;align-items: center;color: #101828;font-size: 16px;font-weight: 400;line-height: 24px;}
+
+.colors_code span {
+    padding: 0px!Important;
+    background: transparent;
+    display: inline-block;
+    margin-right: 7px;
+}
+
+.colors_code span > div {
+    width: 32px;
+    height: 32px;
+    border-radius: 4px;
+}
+
+.hexa_color_box {
+    margin-top: 10px;
+}
+
+.color_code_content {
+    display: flex;
+    align-items: center;
+}
+
+.color_code_content .colors_code {
+    padding: 8px 11px;
+    margin: 0px;
+}
+
+.color_code_content .colors_code + .colors_code {
+    margin-left: 8px;
+}
+
+.hexa_color_box .flex_box + .flex_box {
+    margin-top: 8px;
+}
+
+.color_code_content .colors_code span {
+    margin: 0px;
+}
+
+

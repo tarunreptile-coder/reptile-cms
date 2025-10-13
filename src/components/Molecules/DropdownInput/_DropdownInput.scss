@@ -1,0 +1,33 @@
+.rt-dropdown-input {
+    &:hover {
+        input {
+            cursor: pointer;
+        }
+
+        cursor: pointer;
+    }
+
+    .rt-dropdown-icon {
+        transition: transform 300ms;
+    }
+
+    &.open {
+        .rt-input {
+            box-shadow: $boxShadowXSFocusedPrimary;
+        }
+
+        .rt-dropdown-icon {
+            transform: rotate(180deg);
+        }
+    }
+
+    .rt-dropdown-input-menu {
+        transform: translateY(4px);
+    }
+
+    .rt-list-item {
+        &.selected {
+            background-color: $gray50;
+        }
+    }
+}

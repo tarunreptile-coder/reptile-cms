@@ -1,0 +1,122 @@
+.modal-wrapper {
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+
+  .title-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 14px 0;
+  }
+
+  .upload-wrapper {
+    position: relative;
+    margin-bottom: 24px;
+
+    &:hover {
+      background: rgba(14, 14, 14, 0.5);
+      transition: opacity 0.2s ease;
+      border-radius: 8px;
+
+      .trash_icon {
+        opacity: 1;
+      }
+      .uploaded-box {
+        background: none;
+      }
+    }
+  }
+
+  .uploaded-box {
+    border: 1px solid #d0d5dd;
+    border-radius: 8px;
+    padding: 47px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    background-color: $white;
+    text-align: center;
+    transition: all 0.3s ease;
+
+    .file-name {
+      font-weight: 600;
+      font-size: 14px;
+      color: #333;
+    }
+
+    svg {
+      height: 60px !important;
+      width: 60px !important;
+    }
+  }
+
+  .trash_icon {
+    opacity: 0;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+
+    .image-container {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      svg {
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        path {
+          stroke: #f86c6b;
+        }
+      }
+    }
+  }
+
+  .file-upload-wrapper {
+    .upload-wrapper {
+      .file-drop-box {
+        padding: 10px;
+        flex-direction: row;
+        gap: 4px;
+
+        .rt-text {
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+
+  .font-container {
+    padding: 14px;
+    padding: 14px;
+    gap: 12px;
+    margin-bottom: 20px;
+
+    .font-row {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .rt-clickable-icon {
+        padding: 4px;
+
+        .rt-icon {
+          height: 18px;
+          width: 18px;
+        }
+      }
+    }
+  }
+}

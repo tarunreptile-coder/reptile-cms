@@ -1,0 +1,30 @@
+.apps_img {
+    margin-top: 38px;
+    margin-bottom: 30px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.share_text_box_content {
+    margin-top: 30px;
+    display: flex;
+
+    .share_text_box {
+        background: #f2f4f7;
+        border: 0px;
+        border-radius: 0px;
+        width: 247px;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 14px 16px;
+        color: #667085;
+        font-weight: 700;
+        height: 52px;
+        text-align: center;
+    }
+
+    button {
+        margin-left: 1vw;
+    }
+}

@@ -1,0 +1,58 @@
+{
+    "id": "b1df6cc1-eea4-430b-831d-27ee44cb6425",
+    "type": "header",
+    "contents": [
+        {
+            "id": "dcbe7821-5a39-4312-88c5-f3b8f8e60491",
+            "type": "header-image",
+            "properties": {
+                "general": {
+                    "src": "https://staging.onreptile.com/DataStore/News App-Template/Assets/e31b5152-a5e2-4e39-9438-70490b47ac68.jpg"
+                },
+                "styles": { "width": "50%", "height": "100%" }
+            }
+        },
+        {
+            "id": "dcbe7821-5a39-4312-88c5-f3b8f8e60492",
+            "type": "header-button",
+            "properties": {
+                "general": {},
+                "styles": {
+                    "backgroundColor": "#888888",
+                    "borderRadius": "4px",
+                    "outline": "none"
+                }
+            }
+        },
+        {
+            "id": "dcbe7821-5a39-4312-88c5-f3b8f8e60493",
+            "type": "header-svg",
+            "properties": {
+                "general": {},
+                "styles": {
+                    "width": "24px",
+                    "height": "24px",
+                    "fill": "none",
+                    "stroke": "currentColor",
+                    "strokeLinecap": "round",
+                    "strokeLinejoin": "round",
+                    "strokeWidth": 2
+                }
+            }
+        }
+    ],
+    "className": "header-widget",
+    "properties": {
+        "general": { "linkedTo": "" },
+        "styles": {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "alignItems": "center"
+        }
+    },
+    "friendlyName": "Thumb Navigation",
+    "allowedLinkedContentTypes": [3, 4, 5],
+    "widgetId": "98c937cf-7fc8-4df7-8349-d25c8f4a83c0",
+    "layoutId": "803fd945-aa33-4fce-b66c-b006de9148b5"
+}

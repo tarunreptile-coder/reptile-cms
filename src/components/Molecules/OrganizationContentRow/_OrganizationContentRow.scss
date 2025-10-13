@@ -1,0 +1,75 @@
+.edit-delete-org {
+    display: flex;
+    width: 100%;
+    justify-content: end !important;
+
+    svg {
+        margin-top: 0.3vh;
+        height: 1.2em;
+        width: 1.2em;
+        color: $gray400;
+        cursor: pointer;
+    }
+    .edit-btn {
+        button {
+            border: 1px solid transparent;
+            border-radius: 10px;
+        }
+    }
+    .delete-btn {
+        button {
+            border: 1px solid transparent;
+            border-radius: 10px;
+        }
+    }
+    .reset-btn {
+        button {
+            border: 1px solid transparent;
+            border-radius: 10px;
+        }
+    }
+    &.checked-edit {
+        .edit-btn {
+            button {
+                background-color: #f4ebff;
+                border: 1px solid #7f56d9;
+                border-style: solid;
+                color: #7f56d9;
+            }
+        }
+        .delete-btn {
+            margin-right: 5px;
+            button {
+                background-color: #fac6c2;
+                border: 1px solid #f00;
+                border-style: solid;
+            }
+        }
+        .reset-btn {
+            margin-left: 5px;
+            button {
+                background-color: #eaecf0;
+                border: 1px solid gray;
+                border-style: solid;
+            }
+        }
+    }
+}
+.custom_modal {
+    width: 500px;
+}
+
+.user-footer {
+    display: flex;
+    justify-content: end;
+    margin: 10px 0 0;
+    button {
+        & + button {
+            margin-left: 10px;
+        }
+    }
+}
+
+.pagination-container.custm_pagination_content {
+    margin: 0px;
+}

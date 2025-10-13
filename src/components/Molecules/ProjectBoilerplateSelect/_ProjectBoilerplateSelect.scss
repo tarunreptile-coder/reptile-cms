@@ -1,0 +1,57 @@
+.rt-project-boilerplate-select {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 860px;
+  gap: 12px;
+  overflow-y: auto;
+  height: calc(100vh - 100px);
+
+  .title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 200px;
+
+    .card-image {
+      width: 100%;
+      object-fit: cover;
+    }
+    .card-text {
+      margin: 9.5px 12px;
+    }
+    .invalid-image {
+      background-color: #d0d5dd;
+      object-fit: contain;
+    }
+
+    &.web {
+      .card-image {
+        height: 300px;
+      }
+    }
+
+    &.app {
+      .card-image {
+        height: 110px;
+      }
+      .invalid-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}

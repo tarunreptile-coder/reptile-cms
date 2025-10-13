@@ -1,0 +1,73 @@
+.rt-template-builder-side-panel {
+    height: 100%;
+    background-color: $white;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 24px 16px 24px;
+    gap: 24px;
+
+    .header-divider {
+        &.horizontal {
+            margin: -8px -24px 0px -24px;
+            width: calc(100% + 48px);
+        }
+    }
+
+    .rt-tab-panels {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 0;
+        overflow-y: hidden;
+        width: 100%;
+        min-width: 410px;
+        // Stretch view so the scrollbar is position to the end
+        // and scrolling is from top to bottom of the view
+        margin: -24px;
+
+        .rt-tab-panel {
+            height: 100%;
+            overflow-y: overlay;
+            padding-top: 20px;
+            padding-right: 24px;
+            padding-bottom: 24px;
+            padding-left: 24px;
+            box-sizing: border-box;
+
+            scrollbar-width: thin;
+            scrollbar-color: $gray200 transparent;
+
+            &::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background: transparent;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: $gray200;
+                border-radius: 8px;
+                border: 0px;
+            }
+
+            .rt-elements-container {
+                width: 100%;
+            }
+
+            .widget-section:last-child {
+                padding-bottom: 24px;
+            }
+        }
+    }
+
+    .action-divider {
+        &.horizontal {
+            margin: 0px -24px 0px -24px;
+            width: calc(100% + 48px);
+        }
+    }
+
+    .rt-widget-menu-actions {
+        margin-top: -8px;
+    }
+}

@@ -1,0 +1,60 @@
+.rt-organization-content {
+    width: 100%;
+
+    th {
+        border: 0;
+    }
+
+    td {
+        border: 0;
+    }
+
+    tr{
+        border-bottom: 1px solid $gray200;
+        border-top: 1px solid $gray200;
+        border-collapse: collapse;
+    }
+
+    .role-header {
+        display: flex;
+
+        .role {
+            padding-right: 1vw;
+        }
+
+        .help {
+            svg {
+                margin-top: 0.3vh;
+                height: 1.2em;
+                width: 1.2em;
+                color: $gray400;
+            }
+        }
+    }
+
+    .user-container {
+        display: flex;
+        .users {
+            margin-block: auto;
+            margin-left: 1vw;
+        }
+    }
+
+    .company-tags {
+        display: flex;
+    }
+
+    .edit-delete {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+
+        svg {
+            margin-top: 0.3vh;
+            height: 1.2em;
+            width: 1.2em;
+            color: $gray400;
+            cursor: pointer;
+        }
+    }
+}

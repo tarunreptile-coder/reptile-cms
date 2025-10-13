@@ -1,0 +1,58 @@
+.rt-edit-account {
+    .edit-header {
+        display: flex;
+        align-items: center;
+
+        .save-button {
+            margin-left: auto;
+
+            @include phone {
+                margin-left: 30px;
+        }
+    }
+        @include phone {
+            .edit-header {
+                flex-direction: column;
+            }
+           
+        }
+    }
+
+    .edit-container {
+        display: flex;
+        gap: 20px;
+
+        .input-container1 {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            padding-right: 25px;
+            
+            .rt-input {
+                margin-left: unset;
+            }
+        }
+
+        .input-container2 {
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+
+            .rt-input {
+                margin-left: unset;
+            }
+        }
+
+        @include phone {
+            flex-direction: column;
+        }
+
+        @media (min-width: 360px) and (max-width: 430px) {
+            .input-container1,
+            .input-container2 {
+                width: 80%;
+                padding-right: 0;
+            }
+        }
+    }
+}

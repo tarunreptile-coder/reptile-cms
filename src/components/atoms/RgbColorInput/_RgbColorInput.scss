@@ -1,0 +1,56 @@
+.rt-rgb-color-input {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    input {
+        display: inline;
+        border: none;
+        outline: none;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $gray900;
+        background-color: transparent;
+        width: 58px;
+        box-sizing: border-box;
+        background-color: $gray100;
+        border-radius: 4px;
+        padding: 8px 0px 8px 14px;
+        text-align: center;
+    }
+
+    .percentage {
+        width: 70px;
+
+        &::after {
+            content: '%';
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            pointer-events: none;
+        }
+
+        &.one-char::after {
+            margin-left: -34px;
+        }
+
+        &.two-char::after {
+            margin-left: -31px;
+        }
+
+        &.three-char::after {
+            margin-left: -28px;
+        }
+
+        input {
+            width: 70px;
+            text-align: center;
+            padding: 8px 0px 8px 4px;
+        }
+    }
+}
