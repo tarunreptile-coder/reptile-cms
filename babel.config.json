@@ -14,6 +14,25 @@
     [
       "@babel/plugin-proposal-class-properties",
       { "loose": false }
-    ]
+    ],
+    [
+      "module-resolver",
+      {
+        "root": ["./src"],
+        "alias": {
+          "@Reptile/Assets": "./src/Assets",
+          "@Reptile/Components": "./src/Components",     
+          "@Reptile/Components/Atoms": "./src/Components/Atoms",
+          "@Reptile/Components/Organisms": "./src/Components/Organisms",
+          "@Reptile/Constants": "./src/Constants",
+          "@Reptile/Contexts": "./src/Contexts",
+          "@Reptile/Framework": "./src/Framework",
+          "@Reptile/Hooks": "./src/Hooks",
+          "@Reptile/Services": "./src/Services",
+          "@Reptile/Store": "./src/Store",
+          "~": "./src"
+        }
+      }
+    ]  
   ]
 }
