@@ -20,6 +20,15 @@
       {
         "root": ["./src"],
         "alias": {
+          
+          // CRITICAL FIXES FOR RELATIVE PATH ERRORS:
+          // Map the failing relative paths to their correct absolute location.
+          "../Components/Atoms": "./src/Components/Atoms", 
+          "../../../Components/Atoms": "./src/Components/Atoms",
+          "../Components/Organisms": "./src/Components/Organisms",
+          "../../../Components/Organisms": "./src/Components/Organisms",
+
+          // EXISTING ALIASES (kept for completeness)
           "@Reptile/Assets": "./src/Assets",
           "@Reptile/Components": "./src/Components",     
           "@Reptile/Components/Atoms": "./src/Components/Atoms",
