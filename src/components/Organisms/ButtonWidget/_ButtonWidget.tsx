@@ -8,38 +8,43 @@ import './_ButtonWidget.scss';
 
 const defaultWidget = new WidgetModel(AppWidgets.find(({ type }) => type === 'app-button') as Reptile.Service.Widget);
 
-const ButtonWidget = reactive<Reptile.Props.WidgetProps>(({
-    widget: widgetWithData,
-}) => {
+const ButtonWidget = reactive<Reptile.Props.WidgetProps>(({ widget: widgetWithData }) => {
     const widget = widgetWithData ?? defaultWidget;
+
+    // For buttons, contents may not exist
+    const content = widget.contents?.[0] ?? null;
+
+    // Use styles from content if available, otherwise fallback to widget.properties.general
+    const styles = content?.styles ?? widget.properties?.general ?? {};
 
     return (
         <Flipped flipId={widgetWithData?.id ?? 'preview'}>
             <div className="rt-button-widget">
                 <div style={{
-                    color: widget.contents[0].styles.color,
-                    fontSize: widget.contents[0].styles.fontSize,
-                    fontFamily: widget.contents[0].styles.fontFamily,
-                    margin: widget.contents[0].styles.margin,
-                    padding: widget.contents[0].styles.padding,
-                    width: widget.contents[0].styles.width,
-                    height: widget.contents[0].styles.height,
-                    borderColor: widget.contents[0].styles.borderColor,
-                    backgroundColor: widget.contents[0].styles.backgroundColor,
-                    borderRadius: widget.contents[0].styles.borderRadius,
-                    borderWidth: widget.contents[0].styles.borderWidth,
-                    boxShadow: widget.contents[0].styles.boxShadow,
-                    fontWeight: widget.contents[0].styles.fontWeight,
-                    fontStyle: widget.contents[0].styles.fontStyle,
-                    textDecoration: widget.contents[0].styles.textDecoration,
-                    textAlign: widget.styles.textAlign as 'left' | 'right' | 'center' | undefined,
-                    lineHeight: widget.contents[0].styles.height,
+                    color: styles.color,
+                    fontSize: styles.fontSize,
+                    fontFamily: styles.fontFamily,
+                    margin: styles.margin,
+                    padding: styles.padding,
+                    width: styles.width,
+                    height: styles.height,
+                    borderColor: styles.borderColor,
+                    backgroundColor: styles.backgroundColor,
+                    borderRadius: styles.borderRadius,
+                    borderWidth: styles.borderWidth,
+                    boxShadow: styles.boxShadow,
+                    fontWeight: styles.fontWeight,
+                    fontStyle: styles.fontStyle,
+                    textDecoration: styles.textDecoration,
+                    textAlign: styles.textAlign as 'left' | 'center' | 'right' | undefined,
+                    lineHeight: styles.lineHeight,
                 }}>
-                    <p>{widget.contents[0].properties.text}</p>
+                    <p>{content?.properties?.text ?? widget.friendlyName}</p>
                 </div>
             </div>
         </Flipped>
     );
 });
+
 
 export default ButtonWidget;

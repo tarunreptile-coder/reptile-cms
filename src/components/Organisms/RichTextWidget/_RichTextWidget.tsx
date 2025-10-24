@@ -24,9 +24,9 @@ const _RichTextWidget = reactive<Reptile.Props.WidgetProps>(
                 <div
                     className='rt-rich-text-widget'
                     style={{
-                        backgroundColor: widget.styles.backgroundColor,
-                        minHeight: widget.styles.minHeight,
-                        padding: widget.styles.padding,
+                        backgroundColor: widget?.styles?.backgroundColor,
+                        minHeight: widget?.styles?.minHeight,
+                        padding: widget?.styles?.padding,
                     }}
                 >
                     <TextEditor controller={editorController} disabled={true} />
