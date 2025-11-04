@@ -23,6 +23,8 @@
         "paths": {
             "@Reptile/Assets": ["src/Assets"],
             "@Reptile/Assets/*": ["src/Assets/*"],
+            "@Reptile/Components/Atoms": ["src/Components/Atoms"],
+            "@Reptile/Components/Organisms": ["src/Components/Organisms"],            
             "@Reptile/Components/*": ["src/Components/*"],
             "@Reptile/Constants": ["src/Constants"],
             "@Reptile/Constants/*": ["src/Constants/*"],

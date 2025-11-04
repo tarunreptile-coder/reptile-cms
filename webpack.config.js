@@ -5,12 +5,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin'); // ✅ NEW
 
 const configuration = require('./appSettings.json');
 
 function getPlugins(environmentVariable, environmentConfigurationType) {
-  var plugins = [];
-  var patterns = [
+  const plugins = [];
+  const patterns = [
     { from: './public/img', to: 'img' },
     { from: './public/assets', to: 'assets' },
     { from: './public/favicon.ico', to: './' },
@@ -19,38 +20,16 @@ function getPlugins(environmentVariable, environmentConfigurationType) {
 
   if (environmentVariable === 'prod' || environmentVariable === 'prod-full') {
     plugins.push(
-      new webpack.LoaderOptionsPlugin({
-        debug: true,
-      })
+      new webpack.LoaderOptionsPlugin({ debug: true })
     );
     plugins.push(
-      new CopyWebpackPlugin(
-        {
-          patterns: patterns,
-        },
-        {
-          copyUnmodified: false,
-        }
-      )
+      new CopyWebpackPlugin({ patterns }, { copyUnmodified: false })
     );
   }
 
-  if (
-    environmentVariable === 'stg-full' ||
-    environmentVariable === 'prod-full'
-  ) {
-    // patterns.push(
-    // 	{ from: '../trunk/src/DigitalPcWeb/bin', to: './../bin' }
-    // );
+  if (environmentVariable === 'stg-full' || environmentVariable === 'prod-full') {
     plugins.push(
-      new CopyWebpackPlugin(
-        {
-          patterns: patterns,
-        },
-        {
-          copyUnmodified: false,
-        }
-      )
+      new CopyWebpackPlugin({ patterns }, { copyUnmodified: false })
     );
   }
 
@@ -68,13 +47,10 @@ function getPlugins(environmentVariable, environmentConfigurationType) {
       filename: './../index.html',
     })
   );
-
   plugins.push(
     new webpack.DefinePlugin({
       envConfiguration: JSON.stringify(
-        configuration[environmentConfigurationType]
-          ? configuration[environmentConfigurationType]
-          : configuration['prod']
+        configuration[environmentConfigurationType] || configuration['prod']
       ),
     })
   );
@@ -88,10 +64,8 @@ function getPlugins(environmentVariable, environmentConfigurationType) {
 }
 
 module.exports = (env) => {
-  // eslint-disable-next-line no-unused-vars
-  let webPackEnvironmentVariables = env;
+  const environmentVariable = process.env.NODE_ENV || 'development';
   let BUILD_DIR = '';
-  let environmentVariable = process.env.NODE_ENV;
   let environmentConfigurationType = '';
 
   if (environmentVariable.includes('prod')) {
@@ -110,8 +84,7 @@ module.exports = (env) => {
   return {
     watch: false,
     stats: 'minimal',
-    devtool:
-      environmentConfigurationType === 'prod' ? false : 'eval-source-map',
+    devtool: environmentConfigurationType === 'prod' ? false : 'eval-source-map',
     entry: './src/index',
     output: {
       path: BUILD_DIR,
@@ -119,27 +92,23 @@ module.exports = (env) => {
       publicPath: '/build/',
     },
     resolve: {
+      // ✅ Let Webpack read aliases directly from tsconfig.json
+      plugins: [
+        new TsconfigPathsPlugin({
+          configFile: path.resolve(__dirname, './tsconfig.json'),
+        }),
+      ],
       alias: {
+        // You can keep a few explicit aliases if you want (not required)
         '~': path.resolve(__dirname, 'src/'),
-        '@Reptile/Assets': path.resolve(__dirname, 'src/Assets'),
-        '@Reptile/Components': path.resolve(__dirname, 'src/Components'),
-        '@Reptile/Constants': path.resolve(__dirname, 'src/Constants'),
-        '@Reptile/Contexts': path.resolve(__dirname, 'src/Contexts'),
-        '@Reptile/Framework': path.resolve(__dirname, 'src/Framework'),
-        '@Reptile/Hooks': path.resolve(__dirname, 'src/Hooks'),
-        '@Reptile/Services': path.resolve(__dirname, 'src/Services'),
-        '@Reptile/Store': path.resolve(__dirname, 'src/Store'),
-        //'cldr$': 'cldrjs', 'cldr': 'cldrjs/dist/cldr'
       },
+      extensions: ['.tsx', '.ts', '.js'],
       fallback: {
         fs: false,
         path: false,
       },
-      extensions: ['.tsx', '.ts', '.js'],
     },
-    performance: {
-      hints: false,
-    },
+    performance: { hints: false },
     devServer: {
       proxy: {
         '/api': {
@@ -147,9 +116,6 @@ module.exports = (env) => {
           cookieDomainRewrite: 'localhost',
           target: api,
           onProxyReq: (proxyReq) => {
-            // Browers may send Origin headers even with same-origin
-            // requests. To prevent CORS issues, we have to change
-            // the Origin to match the target URL.
             if (proxyReq.getHeader('origin')) {
               proxyReq.setHeader('origin', api);
             }
@@ -160,17 +126,11 @@ module.exports = (env) => {
           cookieDomainRewrite: 'localhost',
           target: api,
           onProxyReq: (proxyReq) => {
-            // Browers may send Origin headers even with same-origin
-            // requests. To prevent CORS issues, we have to change
-            // the Origin to match the target URL.
             if (proxyReq.getHeader('origin')) {
               proxyReq.setHeader('origin', api);
             }
           },
         },
-        // "*": "http://localhost:55502",
-        // "secure": false,
-        // "changeOrigin": true
       },
       contentBase: __dirname,
       port: 9001,
@@ -208,9 +168,7 @@ module.exports = (env) => {
           use: [
             {
               loader: MiniCssExtractPlugin.loader,
-              options: {
-                esModule: false,
-              },
+              options: { esModule: false },
             },
             'css-loader',
             'sass-loader',
@@ -228,34 +186,28 @@ module.exports = (env) => {
         {
           test: /\.(png|jpg|jpeg|gif|ico)$/,
           type: 'asset/resource',
-          generator: {
-            filename: './img/[name].[ext]',
-          },
+          generator: { filename: './img/[name].[ext]' },
         },
         {
           test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
           type: 'asset/resource',
-          generator: {
-            filename: './fonts/[name].[hash].[ext]',
-          },
+          generator: { filename: './fonts/[name].[hash].[ext]' },
         },
         {
           test: /\.svg$/i,
           type: 'asset/resource',
-          resourceQuery: { not: [/component/, /icon/] }, // Load as file if imported as .svg
+          resourceQuery: { not: [/component/, /icon/] },
         },
         {
           test: /\.svg$/i,
-          resourceQuery: /icon/, // Load as icon if imported as .svg?icon
+          resourceQuery: /icon/,
           issuer: /\.[jt]sx?$/,
           use: [
             {
               loader: '@svgr/webpack',
               options: {
                 icon: true,
-                replaceAttrValues: {
-                  '#101828': 'currentColor',
-                },
+                replaceAttrValues: { '#101828': 'currentColor' },
                 svgProps: { className: 'rt-icon' },
               },
             },
@@ -263,14 +215,12 @@ module.exports = (env) => {
         },
         {
           test: /\.svg$/i,
-          resourceQuery: /component/, // Load as react component if imported as .svg?component
+          resourceQuery: /component/,
           issuer: /\.[jt]sx?$/,
           use: [
             {
               loader: '@svgr/webpack',
-              options: {
-                dimensions: false,
-              },
+              options: { dimensions: false },
             },
           ],
         },
