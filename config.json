@@ -1,6 +1,6 @@
 {
     "local": {
-        "api_url": "/api"
+        "api_url": "https://admin.onreptile.com/api"
     },
     "stg": {
         "api_url": "https://devadmin.pagelizard.co.uk/api"
