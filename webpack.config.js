@@ -89,6 +89,7 @@ module.exports = (env) => {
     output: {
       path: BUILD_DIR,
       filename: '[name].bundle.js',
+      // CRITICAL FIX: Base path is the root
       publicPath: '/', 
     },
     resolve: {
@@ -186,17 +187,21 @@ module.exports = (env) => {
         {
           test: /\.(png|jpg|jpeg|gif|ico)$/,
           type: 'asset/resource',
-          generator: { filename: './img/[name].[ext]' },
+          // ⭐️ MODIFIED: Removed leading './' to ensure it respects publicPath
+          generator: { filename: 'img/[name].[ext]' },
         },
         {
           test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
           type: 'asset/resource',
-          generator: { filename: './fonts/[name].[hash].[ext]' },
+          // ⭐️ MODIFIED: Removed leading './' to ensure it respects publicPath
+          generator: { filename: 'fonts/[name].[hash].[ext]' },
         },
         {
           test: /\.svg$/i,
           type: 'asset/resource',
           resourceQuery: { not: [/component/, /icon/] },
+          // ⭐️ ADDED: Explicitly set filename for non-component SVG assets
+          generator: { filename: 'svg/[name].[ext]' },
         },
         {
           test: /\.svg$/i,
