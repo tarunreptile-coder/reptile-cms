@@ -89,7 +89,7 @@ module.exports = (env) => {
     output: {
       path: BUILD_DIR,
       filename: '[name].bundle.js',
-      publicPath: '/build/',
+      publicPath: '/', 
     },
     resolve: {
       // ✅ Let Webpack read aliases directly from tsconfig.json
