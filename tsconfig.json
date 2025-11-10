@@ -19,7 +19,7 @@
         "allowSyntheticDefaultImports": true,
         "resolveJsonModule": true,
         "allowJs": true,
-        "baseUrl": ".",
+        "baseUrl": "https://admin.onreptile.com/api",
         "paths": {
             "@Reptile/Assets": ["src/Assets"],
             "@Reptile/Assets/*": ["src/Assets/*"],
