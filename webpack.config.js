@@ -5,9 +5,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin'); // ✅ NEW
+const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin'); 
 
 const configuration = require('./appSettings.json');
+
+// 💡 NEW: Hardcoded API URL for DevServer Proxy target
+const HARDCODED_API_URL = 'https://admin.onreptile.com/api';
 
 function getPlugins(environmentVariable, environmentConfigurationType) {
   const plugins = [];
@@ -79,9 +82,7 @@ module.exports = (env) => {
     BUILD_DIR = path.resolve(__dirname, './build');
   }
 
-  const api = configuration[environmentConfigurationType].digitalPcServiceUrl;
-
-  return {
+  const baseConfig = {
     watch: false,
     stats: 'minimal',
     devtool: environmentConfigurationType === 'prod' ? false : 'eval-source-map',
@@ -89,18 +90,15 @@ module.exports = (env) => {
     output: {
       path: BUILD_DIR,
       filename: '[name].bundle.js',
-      // CRITICAL FIX: Base path is the root
       publicPath: '/', 
     },
     resolve: {
-      // ✅ Let Webpack read aliases directly from tsconfig.json
       plugins: [
         new TsconfigPathsPlugin({
           configFile: path.resolve(__dirname, './tsconfig.json'),
         }),
       ],
       alias: {
-        // You can keep a few explicit aliases if you want (not required)
         '~': path.resolve(__dirname, 'src/'),
       },
       extensions: ['.tsx', '.ts', '.js'],
@@ -110,37 +108,6 @@ module.exports = (env) => {
       },
     },
     performance: { hints: false },
-    devServer: {
-      proxy: {
-        '/api': {
-          changeOrigin: true,
-          cookieDomainRewrite: 'localhost',
-          target: api,
-          onProxyReq: (proxyReq) => {
-            if (proxyReq.getHeader('origin')) {
-              proxyReq.setHeader('origin', api);
-            }
-          },
-        },
-        '/Datastore': {
-          changeOrigin: true,
-          cookieDomainRewrite: 'localhost',
-          target: api,
-          onProxyReq: (proxyReq) => {
-            if (proxyReq.getHeader('origin')) {
-              proxyReq.setHeader('origin', api);
-            }
-          },
-        },
-      },
-      contentBase: __dirname,
-      port: 9001,
-      compress: true,
-      hot: true,
-      open: true,
-      writeToDisk: true,
-      historyApiFallback: true,
-    },
     optimization: {
       minimizer: [
         new TerserPlugin({
@@ -187,20 +154,17 @@ module.exports = (env) => {
         {
           test: /\.(png|jpg|jpeg|gif|ico)$/,
           type: 'asset/resource',
-          // ⭐️ MODIFIED: Removed leading './' to ensure it respects publicPath
           generator: { filename: 'img/[name].[ext]' },
         },
         {
           test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
           type: 'asset/resource',
-          // ⭐️ MODIFIED: Removed leading './' to ensure it respects publicPath
           generator: { filename: 'fonts/[name].[hash].[ext]' },
         },
         {
           test: /\.svg$/i,
           type: 'asset/resource',
           resourceQuery: { not: [/component/, /icon/] },
-          // ⭐️ ADDED: Explicitly set filename for non-component SVG assets
           generator: { filename: 'svg/[name].[ext]' },
         },
         {
@@ -233,4 +197,44 @@ module.exports = (env) => {
     },
     plugins: getPlugins(environmentVariable, environmentConfigurationType),
   };
+  
+  // 💡 MODIFIED: DevServer is now conditional and uses the hardcoded URL as the target.
+  if (environmentConfigurationType === 'dev' || environmentConfigurationType === 'stg') {
+      // The API variable is now set to the hardcoded URL, ignoring appSettings.json for the proxy.
+      const api = HARDCODED_API_URL;
+      
+      baseConfig.devServer = {
+          proxy: {
+              '/api': {
+                  changeOrigin: true,
+                  cookieDomainRewrite: 'localhost',
+                  target: api,
+                  onProxyReq: (proxyReq) => {
+                      if (proxyReq.getHeader('origin')) {
+                          proxyReq.setHeader('origin', api);
+                      }
+                  },
+              },
+              '/Datastore': {
+                  changeOrigin: true,
+                  cookieDomainRewrite: 'localhost',
+                  target: api,
+                  onProxyReq: (proxyReq) => {
+                      if (proxyReq.getHeader('origin')) {
+                          proxyReq.setHeader('origin', api);
+                      }
+                  },
+              },
+          },
+          contentBase: __dirname,
+          port: 9001,
+          compress: true,
+          hot: true,
+          open: true,
+          writeToDisk: true,
+          historyApiFallback: true,
+      };
+  }
+
+  return baseConfig;
 };

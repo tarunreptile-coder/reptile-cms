@@ -75,10 +75,27 @@ export default class _AuthenticationService implements IAuthenticationService {
         )}`;
         // Take the date before call to server
         const currentDate = Date.now();
+        debugger
+        // Safely check for the objects before calling the method
+        const httpPublic = this._api?.httpPublic;
+
+        if (httpPublic) {
+            // Confirm the exact method/property name. Assuming 'getBaseUrl' is correct for now.
+            const baseURL = (httpPublic as any).getBaseUrl ? (httpPublic as any).getBaseUrl() : 'Method not found';
+            
+            // Log the result
+            console.log(baseURL, 'Base URL Here');
+        } else {
+            console.error('ERROR: this._api or this._api.httpPublic is undefined.');
+        }
+
+
         // Call server
         const token: Reptile.Service.AuthToken =
             await this._api.httpPublic.post('/token', data);
         // Set the token together with the date in local storage
+
+      
         localStorage.setItem(
             'auth',
             JSON.stringify({
