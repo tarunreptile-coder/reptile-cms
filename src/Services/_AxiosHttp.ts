@@ -8,7 +8,7 @@ export default class AxiosHttp implements IHttpApi {
 
     constructor() {
         this._instance = axios.create({
-            baseURL: config.local.api_url,
+            baseURL: "https://admin.onreptile.com/api",
             timeout: 40000,
         });
     }
