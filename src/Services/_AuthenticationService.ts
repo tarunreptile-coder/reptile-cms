@@ -80,11 +80,8 @@ export default class _AuthenticationService implements IAuthenticationService {
         const httpPublic = this._api?.httpPublic;
 
         if (httpPublic) {
-            // Confirm the exact method/property name. Assuming 'getBaseUrl' is correct for now.
-            const baseURL = (httpPublic as any).getBaseUrl ? (httpPublic as any).getBaseUrl() : 'Method not found';
-            
-            // Log the result
-            console.log(baseURL, 'Base URL Here');
+            const baseURL = (httpPublic as any).baseURL;
+            console.log('DEBUG: AuthenticationService using baseURL:', baseURL);
         } else {
             console.error('ERROR: this._api or this._api.httpPublic is undefined.');
         }
@@ -95,7 +92,7 @@ export default class _AuthenticationService implements IAuthenticationService {
             await this._api.httpPublic.post('/token', data);
         // Set the token together with the date in local storage
 
-      
+
         localStorage.setItem(
             'auth',
             JSON.stringify({

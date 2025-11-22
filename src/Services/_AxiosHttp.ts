@@ -7,10 +7,12 @@ export default class AxiosHttp implements IHttpApi {
     private readonly _instance: AxiosInstance;
 
     constructor() {
+        console.log('DEBUG: envConfiguration:', envConfiguration);
         this._instance = axios.create({
             baseURL: envConfiguration.digitalPcServiceUrl,
             timeout: 40000,
         });
+        console.log('DEBUG: AxiosHttp initialized with baseURL:', this._instance.defaults.baseURL);
     }
 
     async get<TConfig, TResponse>(url: string, config?: TConfig | undefined): Promise<TResponse> {
@@ -31,5 +33,9 @@ export default class AxiosHttp implements IHttpApi {
 
     async delete<TConfig, TResponse>(url: string, config?: TConfig | undefined): Promise<TResponse> {
         return (await this._instance.delete(url, config as AxiosRequestConfig)).data as TResponse;
+    }
+
+    get baseURL(): string | undefined {
+        return this._instance.defaults.baseURL;
     }
 }
